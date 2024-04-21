@@ -87,7 +87,9 @@ $(function() {
 
 <p>MusicPlayer that handles the playback of Playlists with music zones in mind. <br  />
  Music zone logic is handled like how it is in Juke's Towers of Hell. This means that whenever a player enters a music zone, the zone's playlist gets played. <br  />
- In order for music to play when the player is outside a music zone, a primary playlist must be set. This playlist will get played when outside of the music zones.  
+ In order for music to play when the player is outside a music zone, a primary playlist must be set. This playlist will get played when outside of the music zones. <br  />
+ <br  />
+ It's important to note that MusicZonePlayer will only update CurrentPlaylist once per process frame for stability reasons (as long as the calling of MusicZonePlayer's _Process() function hasn't been disabled).  
  <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Jumpvalley.Music.MusicZonePlayer:</div>
@@ -102,7 +104,7 @@ Inheritance diagram for Jumpvalley.Music.MusicZonePlayer:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af886462ebf9ac8c69ae2313b7db67b25" id="r_af886462ebf9ac8c69ae2313b7db67b25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af886462ebf9ac8c69ae2313b7db67b25">Remove</a> (<a class="el" href="class_jumpvalley_1_1_music_1_1_music_zone.html">MusicZone</a> zone)</td></tr>
-<tr class="memdesc:af886462ebf9ac8c69ae2313b7db67b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deregisters a music zone from playback. If the removed music zone is equal to CurrentPlaylist and IsPlaying is true, CurrentPlaylist will be set to PrimaryPlaylist.  <br /></td></tr>
+<tr class="memdesc:af886462ebf9ac8c69ae2313b7db67b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deregisters a music zone from playback.  <br /></td></tr>
 <tr class="separator:af886462ebf9ac8c69ae2313b7db67b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8eb53d21dcfcc62d548c5ed0d0bf7bf" id="r_af8eb53d21dcfcc62d548c5ed0d0bf7bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8eb53d21dcfcc62d548c5ed0d0bf7bf">Add</a> (<a class="el" href="class_jumpvalley_1_1_music_1_1_music_zone.html">MusicZone</a> zone)</td></tr>
 <tr class="memdesc:af8eb53d21dcfcc62d548c5ed0d0bf7bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a MusicZone for playback by this music player.  <br /></td></tr>
@@ -181,16 +183,15 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>MusicPlayer that handles the playback of Playlists with music zones in mind. <br  />
  Music zone logic is handled like how it is in Juke's Towers of Hell. This means that whenever a player enters a music zone, the zone's playlist gets played. <br  />
- In order for music to play when the player is outside a music zone, a primary playlist must be set. This playlist will get played when outside of the music zones. </p>
+ In order for music to play when the player is outside a music zone, a primary playlist must be set. This playlist will get played when outside of the music zones. <br  />
+ <br  />
+ It's important to note that MusicZonePlayer will only update CurrentPlaylist once per process frame for stability reasons (as long as the calling of MusicZonePlayer's _Process() function hasn't been disabled). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af8eb53d21dcfcc62d548c5ed0d0bf7bf" name="af8eb53d21dcfcc62d548c5ed0d0bf7bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8eb53d21dcfcc62d548c5ed0d0bf7bf">&#9670;&#160;</a></span>Add()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Jumpvalley.Music.MusicZonePlayer.Add </td>
@@ -199,11 +200,6 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Registers a MusicZone for playback by this music player. </p>
@@ -234,7 +230,7 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -250,9 +246,6 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Jumpvalley.Music.MusicZonePlayer.Remove </td>
@@ -261,14 +254,9 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Deregisters a music zone from playback. If the removed music zone is equal to CurrentPlaylist and IsPlaying is true, CurrentPlaylist will be set to PrimaryPlaylist. </p>
+<p>Deregisters a music zone from playback. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">zone</td><td></td></tr>
@@ -279,7 +267,7 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/main/Music/<b>MusicZonePlayer.cs</b></li>
+<li>src/core/Music/<b>MusicZonePlayer.cs</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['eventsubscriber_0',['EventSubscriber',['../class_jumpvalley_1_1_events_1_1_event_subscriber.html',1,'Jumpvalley::Events']]]
+  ['fullscreencontrol_0',['FullscreenControl',['../class_jumpvalley_1_1_players_1_1_controls_1_1_fullscreen_control.html',1,'Jumpvalley::Players::Controls']]]
 ];

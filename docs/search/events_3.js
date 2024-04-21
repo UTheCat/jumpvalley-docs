@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['songchanged_0',['SongChanged',['../class_jumpvalley_1_1_music_1_1_music_player.html#a00976d1da90bfdd4a977154761dcce5e',1,'Jumpvalley.Music.MusicPlayer.SongChanged'],['../class_jumpvalley_1_1_music_1_1_playlist.html#a979530d749c74df9e6208f3822863227',1,'Jumpvalley.Music.Playlist.SongChanged']]],
-  ['stopped_1',['Stopped',['../class_jumpvalley_1_1_music_1_1_playlist.html#a57b85f033969a79c7c4d85c0f6b10d2f',1,'Jumpvalley::Music::Playlist']]]
+  ['visibilitychanged_0',['VisibilityChanged',['../class_jumpvalley_1_1_animation_1_1_animated_node.html#a60311cb2e5d25e9c33e7317d7b9208ff',1,'Jumpvalley::Animation::AnimatedNode']]]
 ];

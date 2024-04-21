@@ -130,25 +130,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3bc9639190fc2d696e1e839588cbe14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and returns the move vector that the player wants to move the character in, regardless of whether or not they're currently jumping or climbing. <br  />
  The calculated move vector can be rotated to a specified yaw angle. This is useful when you want to make the character move in the direction that the camera is facing.  <br /></td></tr>
 <tr class="separator:a3bc9639190fc2d696e1e839588cbe14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cc04f32681a52acaa7cb05c7d0a74b9" id="r_a7cc04f32681a52acaa7cb05c7d0a74b9"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cc04f32681a52acaa7cb05c7d0a74b9">GetVelocity</a> (float delta, float yaw)</td></tr>
-<tr class="memdesc:a7cc04f32681a52acaa7cb05c7d0a74b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the character's velocity for some sort of physics frame.  <br /></td></tr>
-<tr class="separator:a7cc04f32681a52acaa7cb05c7d0a74b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba6dc8baf480c954eac2a084fa16b2dd" id="r_aba6dc8baf480c954eac2a084fa16b2dd"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba6dc8baf480c954eac2a084fa16b2dd">GetMoveVelocity</a> (float delta, float yaw)</td></tr>
+<tr class="memdesc:aba6dc8baf480c954eac2a084fa16b2dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the velocity that the character wants to move at for the current physics frame.  <br /></td></tr>
+<tr class="separator:aba6dc8baf480c954eac2a084fa16b2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a171fec039f2e13c03be5dfdbb0ed2f4a" id="r_a171fec039f2e13c03be5dfdbb0ed2f4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a171fec039f2e13c03be5dfdbb0ed2f4a">HandlePhysicsStep</a> (double delta)</td></tr>
 <tr class="memdesc:a171fec039f2e13c03be5dfdbb0ed2f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to associate with the physics process step in the current scene tree.  <br /></td></tr>
 <tr class="separator:a171fec039f2e13c03be5dfdbb0ed2f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea89e4623579368f15fad2924d34835c" id="r_aea89e4623579368f15fad2924d34835c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea89e4623579368f15fad2924d34835c">HandleProcessStep</a> (double delta)</td></tr>
-<tr class="memdesc:aea89e4623579368f15fad2924d34835c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to associate with the normal process step in the current scene tree.  <br /></td></tr>
-<tr class="separator:aea89e4623579368f15fad2924d34835c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04c5e46ea3640c5b4cc6024ffe128703" id="r_a04c5e46ea3640c5b4cc6024ffe128703"><td class="memItemLeft" align="right" valign="top"><a id="a04c5e46ea3640c5b4cc6024ffe128703" name="a04c5e46ea3640c5b4cc6024ffe128703"></a>
-new void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> ()</td></tr>
-<tr class="memdesc:a04c5e46ea3640c5b4cc6024ffe128703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disposes of this BaseMover <br /></td></tr>
+<tr class="memitem:a04c5e46ea3640c5b4cc6024ffe128703" id="r_a04c5e46ea3640c5b4cc6024ffe128703"><td class="memItemLeft" align="right" valign="top">new void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04c5e46ea3640c5b4cc6024ffe128703">Dispose</a> ()</td></tr>
+<tr class="memdesc:a04c5e46ea3640c5b4cc6024ffe128703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to associate with the normal process step in the current scene tree.  <br /></td></tr>
 <tr class="separator:a04c5e46ea3640c5b4cc6024ffe128703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a629b46fe954b7df892b60e51890e892d" id="r_a629b46fe954b7df892b60e51890e892d"><td class="memItemLeft" align="right" valign="top"><a id="a629b46fe954b7df892b60e51890e892d" name="a629b46fe954b7df892b60e51890e892d"></a>
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_PhysicsProcess</b> (double delta)</td></tr>
 <tr class="separator:a629b46fe954b7df892b60e51890e892d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cdfc7fd9aa05f2ded3426b1a76dc65d" id="r_a3cdfc7fd9aa05f2ded3426b1a76dc65d"><td class="memItemLeft" align="right" valign="top"><a id="a3cdfc7fd9aa05f2ded3426b1a76dc65d" name="a3cdfc7fd9aa05f2ded3426b1a76dc65d"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b> (double delta)</td></tr>
-<tr class="separator:a3cdfc7fd9aa05f2ded3426b1a76dc65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -170,6 +163,11 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>Gravity</b> = 9.8f</
 float&#160;</td><td class="memItemRight" valign="bottom"><b>JumpVelocity</b> = 5f</td></tr>
 <tr class="memdesc:a1e05785c177e801547a54ec9243536e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The initial velocity of the character's jump. <br /></td></tr>
 <tr class="separator:a1e05785c177e801547a54ec9243536e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a690cad6ef42196aa3953cfb729be11cb" id="r_a690cad6ef42196aa3953cfb729be11cb"><td class="memItemLeft" align="right" valign="top"><a id="a690cad6ef42196aa3953cfb729be11cb" name="a690cad6ef42196aa3953cfb729be11cb"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Acceleration</b> = 16f</td></tr>
+<tr class="memdesc:a690cad6ef42196aa3953cfb729be11cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The acceleration that the character's velocity changes at. <br  />
+ This doesn't affect upward and downward movement, and therefore, this only affects X and Z movement. <br /></td></tr>
+<tr class="separator:a690cad6ef42196aa3953cfb729be11cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6c0791e3c829fec5d5270a52e2fba4e" id="r_ad6c0791e3c829fec5d5270a52e2fba4e"><td class="memItemLeft" align="right" valign="top"><a id="ad6c0791e3c829fec5d5270a52e2fba4e" name="ad6c0791e3c829fec5d5270a52e2fba4e"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>CameraYaw</b> = 0</td></tr>
 <tr class="memdesc:ad6c0791e3c829fec5d5270a52e2fba4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current yaw angle of the camera that's currently associated with the character. <br /></td></tr>
@@ -230,6 +228,10 @@ CharacterBody3D&#160;</td><td class="memItemRight" valign="bottom"><b>Body</b><c
 <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1_1_climber.html">Climber</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentClimber</b><code> [get]</code></td></tr>
 <tr class="memdesc:a33f9095ceff173c36ea067f54e6c4e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Climber that's currently in charge of determining whether or not the character can climb at the current physics frame. <br /></td></tr>
 <tr class="separator:a33f9095ceff173c36ea067f54e6c4e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c3e0bebca082bf2d5f9a8b397b1e283" id="r_a2c3e0bebca082bf2d5f9a8b397b1e283"><td class="memItemLeft" align="right" valign="top"><a id="a2c3e0bebca082bf2d5f9a8b397b1e283" name="a2c3e0bebca082bf2d5f9a8b397b1e283"></a>
+Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>LastVelocity</b><code> [get]</code></td></tr>
+<tr class="memdesc:a2c3e0bebca082bf2d5f9a8b397b1e283"><td class="mdescLeft">&#160;</td><td class="mdescRight">The most recent character velocity. In BaseMover's PhysicsProcess updater, this is read by GetMoveVelocity to determine what the velocity in the previous physics frame was before this value gets updated again. <br /></td></tr>
+<tr class="separator:a2c3e0bebca082bf2d5f9a8b397b1e283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="events" name="events"></a>
 Events</h2></td></tr>
@@ -275,14 +277,37 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a04c5e46ea3640c5b4cc6024ffe128703" name="a04c5e46ea3640c5b4cc6024ffe128703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c5e46ea3640c5b4cc6024ffe128703">&#9670;&#160;</a></span>Dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">new void Jumpvalley.Players.Movement.BaseMover.Dispose </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback to associate with the normal process step in the current scene tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Disposes of this BaseMover </p>
+
+</div>
+</div>
 <a id="a3bc9639190fc2d696e1e839588cbe14d" name="a3bc9639190fc2d696e1e839588cbe14d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3bc9639190fc2d696e1e839588cbe14d">&#9670;&#160;</a></span>GetMoveVector()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Vector3 Jumpvalley.Players.Movement.BaseMover.GetMoveVector </td>
@@ -291,11 +316,6 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Calculates and returns the move vector that the player wants to move the character in, regardless of whether or not they're currently jumping or climbing. <br  />
@@ -310,17 +330,14 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
 
 </div>
 </div>
-<a id="a7cc04f32681a52acaa7cb05c7d0a74b9" name="a7cc04f32681a52acaa7cb05c7d0a74b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cc04f32681a52acaa7cb05c7d0a74b9">&#9670;&#160;</a></span>GetVelocity()</h2>
+<a id="aba6dc8baf480c954eac2a084fa16b2dd" name="aba6dc8baf480c954eac2a084fa16b2dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba6dc8baf480c954eac2a084fa16b2dd">&#9670;&#160;</a></span>GetMoveVelocity()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3 Jumpvalley.Players.Movement.BaseMover.GetVelocity </td>
+          <td class="memname">Vector3 Jumpvalley.Players.Movement.BaseMover.GetMoveVelocity </td>
           <td>(</td>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>delta</em>, </span></td>
         </tr>
@@ -330,14 +347,9 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>yaw</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Gets the character's velocity for some sort of physics frame. </p>
+<p>Gets the velocity that the character wants to move at for the current physics frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">delta</td><td>The time it took to complete the physics frame in seconds</td></tr>
@@ -354,9 +366,6 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Jumpvalley.Players.Movement.BaseMover.HandlePhysicsStep </td>
@@ -365,11 +374,6 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Callback to associate with the physics process step in the current scene tree. </p>
@@ -382,47 +386,11 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
 
 </div>
 </div>
-<a id="aea89e4623579368f15fad2924d34835c" name="aea89e4623579368f15fad2924d34835c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea89e4623579368f15fad2924d34835c">&#9670;&#160;</a></span>HandleProcessStep()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Jumpvalley.Players.Movement.BaseMover.HandleProcessStep </td>
-          <td>(</td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>delta</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Callback to associate with the normal process step in the current scene tree. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">delta</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a254ae54aaf855d79a2a4aedc6394387d" name="a254ae54aaf855d79a2a4aedc6394387d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a254ae54aaf855d79a2a4aedc6394387d">&#9670;&#160;</a></span>IsOnFloor()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Jumpvalley.Players.Movement.BaseMover.IsOnFloor </td>
@@ -431,11 +399,6 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Returns whether or not the associated CharacterBody3D is on the floor. </p>
@@ -444,7 +407,7 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/main/Players/Movement/<b>BaseMover.cs</b></li>
+<li>src/core/Players/Movement/<b>BaseMover.cs</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

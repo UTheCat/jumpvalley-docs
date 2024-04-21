@@ -103,7 +103,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_music_1_1_music_zone_player.html">MusicZonePlayer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MusicPlayer that handles the playback of Playlists with music zones in mind. <br  />
  Music zone logic is handled like how it is in Juke's Towers of Hell. This means that whenever a player enters a music zone, the zone's playlist gets played. <br  />
- In order for music to play when the player is outside a music zone, a primary playlist must be set. This playlist will get played when outside of the music zones.  <a href="class_jumpvalley_1_1_music_1_1_music_zone_player.html#details">More...</a><br /></td></tr>
+ In order for music to play when the player is outside a music zone, a primary playlist must be set. This playlist will get played when outside of the music zones. <br  />
+ <br  />
+ It's important to note that MusicZonePlayer will only update CurrentPlaylist once per process frame for stability reasons (as long as the calling of MusicZonePlayer's _Process() function hasn't been disabled).  <a href="class_jumpvalley_1_1_music_1_1_music_zone_player.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a musical playlist that can hold multiple Songs.  <a href="class_jumpvalley_1_1_music_1_1_playlist.html#details">More...</a><br /></td></tr>
