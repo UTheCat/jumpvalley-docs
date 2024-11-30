@@ -1,6 +1,6 @@
 # Jumpvalley Documentation
 
-![Jumpvalley's logo. The logo contains two circles and an arrow pointing upward.](./assets/app_icon_round.png)
+![Jumpvalley's logo. The logo contains two circles and an arrow pointing upward.](assets/app_icon_round_256px.png)
 
 Welcome to Jumpvalley's documentation! This site contains documentation of Jumpvalley's core API.
 
