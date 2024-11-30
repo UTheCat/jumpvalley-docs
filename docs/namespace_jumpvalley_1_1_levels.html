@@ -6,6 +6,7 @@
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Jumpvalley: Jumpvalley.Levels Namespace Reference</title>
+<link rel="icon" href="app_icon_round_256px.png" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="app_icon_round_64px.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Jumpvalley
+   <div id="projectname">Jumpvalley<span id="projectnumber">&#160;0.5.0</span>
    </div>
+   <div id="projectbrief">An app and library that can be used to test and run 3D platformer levels. Currently being made with Godot.</div>
   </td>
  </tr>
  </tbody>
@@ -87,7 +90,18 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a difficulty, a set of values that judge how difficult a level is.  <a href="class_jumpvalley_1_1_levels_1_1_difficulty.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_levels_1_1_difficulty_presets.html">DifficultyPresets</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Difficulty presets taken from difficulty-rating systems already established by various communities.  <a href="class_jumpvalley_1_1_levels_1_1_difficulty_presets.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class contains some difficulty sets that can be used to label the difficulty of a level. <br  />
+<br  />
+ Currently, the difficulty sets here have one of these characteristics: </p><ul>
+<li>
+It's directly from a game or community  </li>
+<li>
+It's from a game or community, but it's been modified.  </li>
+</ul>
+ <a href="class_jumpvalley_1_1_levels_1_1_difficulty_presets.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_levels_1_1_difficulty_set.html">DifficultySet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that groups multiple difficulties together. Useful when you want to have all the difficulties within a game in one place and be able to perform some calculations based off of them.  <a href="class_jumpvalley_1_1_levels_1_1_difficulty_set.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_levels_1_1_directory_level_runner.html">DirectoryLevelRunner</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of LevelRunner that handles running levels located within a directory.  <a href="class_jumpvalley_1_1_levels_1_1_directory_level_runner.html#details">More...</a><br /></td></tr>
@@ -95,6 +109,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_levels_1_1_level.html">Level</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class represents a level that's playable in <a class="el" href="namespace_jumpvalley.html">Jumpvalley</a>. <br  />
  Each level contains four primary components: interactives, music, static objects, and start point. More details can be found on <a class="el" href="namespace_jumpvalley.html">Jumpvalley</a>'s wiki article on Level Layout.  <a href="class_jumpvalley_1_1_levels_1_1_level.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_levels_1_1_level_info.html">LevelInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class containing some info about a level.  <a href="class_jumpvalley_1_1_levels_1_1_level_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_levels_1_1_level_info_file.html">LevelInfoFile</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an info file for a <a class="el" href="namespace_jumpvalley.html">Jumpvalley</a> level.  <a href="class_jumpvalley_1_1_levels_1_1_level_info_file.html#details">More...</a><br /></td></tr>

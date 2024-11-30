@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['paused_0',['Paused',['../class_jumpvalley_1_1_levels_1_1_level.html#abe6102ca754c8caa2f012d8c4ee0377eae99180abf47a8b3a856e0bcb2656990a',1,'Jumpvalley::Levels::Level']]],
-  ['playing_1',['Playing',['../class_jumpvalley_1_1_levels_1_1_level.html#abe6102ca754c8caa2f012d8c4ee0377eac9dbb2b7c84159b632d71e512eba8428',1,'Jumpvalley::Levels::Level']]]
+  ['lefttoright_0',['LeftToRight',['../class_jumpvalley_1_1_raycasting_1_1_raycast_sweep.html#ab10cb561cdedf5ed31ec2e0a8fb91d5ead1e80c506f4c89e3c4fb1c1b4867a03c',1,'Jumpvalley::Raycasting::RaycastSweep']]]
 ];

@@ -6,6 +6,7 @@
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Jumpvalley: Jumpvalley.Music.MusicZonePlayer Class Reference</title>
+<link rel="icon" href="app_icon_round_256px.png" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="app_icon_round_64px.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Jumpvalley
+   <div id="projectname">Jumpvalley<span id="projectnumber">&#160;0.5.0</span>
    </div>
+   <div id="projectbrief">An app and library that can be used to test and run 3D platformer levels. Currently being made with Godot.</div>
   </td>
  </tr>
  </tbody>
@@ -116,6 +119,15 @@ override void&#160;</td><td class="memItemRight" valign="bottom"><b>_Process</b>
 new void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> ()</td></tr>
 <tr class="separator:a775e74a0eb655a211fc25edb7005064e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_jumpvalley_1_1_music_1_1_music_player"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_jumpvalley_1_1_music_1_1_music_player')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_jumpvalley_1_1_music_1_1_music_player.html">Jumpvalley.Music.MusicPlayer</a></td></tr>
+<tr class="memitem:af97a034f3afbeb4e39bf0b96e78a5857 inherit pub_methods_class_jumpvalley_1_1_music_1_1_music_player" id="r_af97a034f3afbeb4e39bf0b96e78a5857"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_music_1_1_music_player.html#af97a034f3afbeb4e39bf0b96e78a5857">ApplyOverrides</a> (<a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a> playlist)</td></tr>
+<tr class="memdesc:af97a034f3afbeb4e39bf0b96e78a5857 inherit pub_methods_class_jumpvalley_1_1_music_1_1_music_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that can be overriden to define how playlists added to this music player should have their properties overriden. By default, overrides defined in the MusicPlayer class are applied here.  <br /></td></tr>
+<tr class="separator:af97a034f3afbeb4e39bf0b96e78a5857 inherit pub_methods_class_jumpvalley_1_1_music_1_1_music_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a346e357b75fcc3d9fadf47d1d3e1ab6e inherit pub_methods_class_jumpvalley_1_1_music_1_1_music_player" id="r_a346e357b75fcc3d9fadf47d1d3e1ab6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_music_1_1_music_player.html#a346e357b75fcc3d9fadf47d1d3e1ab6e">RemovePlaylist</a> (<a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a> playlist)</td></tr>
+<tr class="memdesc:a346e357b75fcc3d9fadf47d1d3e1ab6e inherit pub_methods_class_jumpvalley_1_1_music_1_1_music_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a playlist from this MusicPlayer. This will cause this MusicPlayer to no longer make changes to the removed Playlist.  <br /></td></tr>
+<tr class="separator:a346e357b75fcc3d9fadf47d1d3e1ab6e inherit pub_methods_class_jumpvalley_1_1_music_1_1_music_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5051ed4a7210e797e92157718d7cf9d inherit pub_methods_class_jumpvalley_1_1_music_1_1_music_player" id="r_ab5051ed4a7210e797e92157718d7cf9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_music_1_1_music_player.html#ab5051ed4a7210e797e92157718d7cf9d">AddPlaylist</a> (<a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a> playlist)</td></tr>
+<tr class="memdesc:ab5051ed4a7210e797e92157718d7cf9d inherit pub_methods_class_jumpvalley_1_1_music_1_1_music_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a playlist to this MusicPlayer. This will let this MusicPlayer make some changes to the added playlist.  <br /></td></tr>
+<tr class="separator:ab5051ed4a7210e797e92157718d7cf9d inherit pub_methods_class_jumpvalley_1_1_music_1_1_music_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e48d52be9263712723134c373db0dc5 inherit pub_methods_class_jumpvalley_1_1_music_1_1_music_player" id="r_a6e48d52be9263712723134c373db0dc5"><td class="memItemLeft" align="right" valign="top">
 new void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> ()</td></tr>
 <tr class="separator:a6e48d52be9263712723134c373db0dc5 inherit pub_methods_class_jumpvalley_1_1_music_1_1_music_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +151,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>OverrideTransitionTim
 double&#160;</td><td class="memItemRight" valign="bottom"><b>TransitionTime</b> = 0</td></tr>
 <tr class="memdesc:ab66b65a4940d0c9ef02ea3e744ef0dd9 inherit pub_attribs_class_jumpvalley_1_1_music_1_1_music_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playlists played by this music player will have their volume transition time set to the value of this variable whenever OverrideTransitionTime is set to true,. <br /></td></tr>
 <tr class="separator:ab66b65a4940d0c9ef02ea3e744ef0dd9 inherit pub_attribs_class_jumpvalley_1_1_music_1_1_music_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96b4a1618b2cde5b657b447a837a5fb inherit pub_attribs_class_jumpvalley_1_1_music_1_1_music_player" id="r_ad96b4a1618b2cde5b657b447a837a5fb"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>OverrideLocalVolumeScale</b> = false</td></tr>
+<tr class="memdesc:ad96b4a1618b2cde5b657b447a837a5fb inherit pub_attribs_class_jumpvalley_1_1_music_1_1_music_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the a playlist's LocalVolumeScale will get set to VolumeScale whenever it gets played by this music player. <br /></td></tr>
+<tr class="separator:ad96b4a1618b2cde5b657b447a837a5fb inherit pub_attribs_class_jumpvalley_1_1_music_1_1_music_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f89bd768fe4f4d0a058e0fc911c93dc inherit pub_attribs_class_jumpvalley_1_1_music_1_1_music_player" id="r_a1f89bd768fe4f4d0a058e0fc911c93dc"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>OverrideSongStreamHandlingMode</b> = false</td></tr>
+<tr class="memdesc:a1f89bd768fe4f4d0a058e0fc911c93dc inherit pub_attribs_class_jumpvalley_1_1_music_1_1_music_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not playlist handled by this music player should have their Playlist.SongStreamHandlingMode property overriden to the value of this music player's SongStreamHandlingMode variable. <br /></td></tr>
+<tr class="separator:a1f89bd768fe4f4d0a058e0fc911c93dc inherit pub_attribs_class_jumpvalley_1_1_music_1_1_music_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78fc8d4d67230763a98abed041026b25 inherit pub_attribs_class_jumpvalley_1_1_music_1_1_music_player" id="r_a78fc8d4d67230763a98abed041026b25"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShouldSetPlaylistParent</b></td></tr>
+<tr class="memdesc:a78fc8d4d67230763a98abed041026b25 inherit pub_attribs_class_jumpvalley_1_1_music_1_1_music_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not this MusicPlayer should add/remove this music player as a parent when the AddPlaylist and RemovePlaylist methods are called. <br /></td></tr>
+<tr class="separator:a78fc8d4d67230763a98abed041026b25 inherit pub_attribs_class_jumpvalley_1_1_music_1_1_music_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -157,10 +181,23 @@ List&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_music_zone.html">Mus
 <tr class="memdesc:a77f47988bdf14005da6c796d3366543e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of MusicZones that can be played by this MusicZonePlayer <br /></td></tr>
 <tr class="separator:a77f47988bdf14005da6c796d3366543e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_jumpvalley_1_1_music_1_1_music_player"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_class_jumpvalley_1_1_music_1_1_music_player')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_jumpvalley_1_1_music_1_1_music_player.html">Jumpvalley.Music.MusicPlayer</a></td></tr>
+<tr class="memitem:a1af3d1a504c956ca7b054ccd574c77c2 inherit properties_class_jumpvalley_1_1_music_1_1_music_player" id="r_a1af3d1a504c956ca7b054ccd574c77c2"><td class="memItemLeft" align="right" valign="top">
+List&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Playlists</b><code> [get]</code></td></tr>
+<tr class="memdesc:a1af3d1a504c956ca7b054ccd574c77c2 inherit properties_class_jumpvalley_1_1_music_1_1_music_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playlists currently being handled by this MusicPlayer <br  />
+ <br /></td></tr>
+<tr class="separator:a1af3d1a504c956ca7b054ccd574c77c2 inherit properties_class_jumpvalley_1_1_music_1_1_music_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07c76d088c5ddad2f762fc61c3d1acbe inherit properties_class_jumpvalley_1_1_music_1_1_music_player" id="r_a07c76d088c5ddad2f762fc61c3d1acbe"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentPlaylist</b><code> [get, protected set]</code></td></tr>
 <tr class="memdesc:a07c76d088c5ddad2f762fc61c3d1acbe inherit properties_class_jumpvalley_1_1_music_1_1_music_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">The playlist that's currently being played by the MusicPlayer. <br /></td></tr>
 <tr class="separator:a07c76d088c5ddad2f762fc61c3d1acbe inherit properties_class_jumpvalley_1_1_music_1_1_music_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd599f338414b6027df128f0779f698 inherit properties_class_jumpvalley_1_1_music_1_1_music_player" id="r_a6cd599f338414b6027df128f0779f698"><td class="memItemLeft" align="right" valign="top">
+double&#160;</td><td class="memItemRight" valign="bottom"><b>VolumeScale</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a6cd599f338414b6027df128f0779f698 inherit properties_class_jumpvalley_1_1_music_1_1_music_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playlists played by this music player will have their LocalVolumeScale set to the value of this variable whenever OverrideLocalVolumeScale is set to true,. <br /></td></tr>
+<tr class="separator:a6cd599f338414b6027df128f0779f698 inherit properties_class_jumpvalley_1_1_music_1_1_music_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdef9a544910a9ed462dadd118f470ec inherit properties_class_jumpvalley_1_1_music_1_1_music_player" id="r_acdef9a544910a9ed462dadd118f470ec"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html#a47114cc451be69090edb4f0093c5ceaf">Playlist.SongStreamHandlingModeFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SongStreamHandlingMode</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:acdef9a544910a9ed462dadd118f470ec inherit properties_class_jumpvalley_1_1_music_1_1_music_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">The song stream handling mode that the playlists handled by this music player should use if OverrideSongStreamHandlingMode is set to true. <br /></td></tr>
+<tr class="separator:acdef9a544910a9ed462dadd118f470ec inherit properties_class_jumpvalley_1_1_music_1_1_music_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf4daa1993840f8e527e0980f7e5ee1a inherit properties_class_jumpvalley_1_1_music_1_1_music_player" id="r_aaf4daa1993840f8e527e0980f7e5ee1a"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PrimaryPlaylist</b><code> [get, set]</code></td></tr>
 <tr class="memdesc:aaf4daa1993840f8e527e0980f7e5ee1a inherit properties_class_jumpvalley_1_1_music_1_1_music_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">The MusicPlayer's primary playlist. If set, this playlist will be played whenever IsPlaying is set to true. <br /></td></tr>
@@ -192,6 +229,9 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Jumpvalley.Music.MusicZonePlayer.Add </td>
@@ -200,6 +240,11 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Registers a MusicZone for playback by this music player. </p>
@@ -230,7 +275,7 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -246,6 +291,9 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Jumpvalley.Music.MusicZonePlayer.Remove </td>
@@ -254,6 +302,11 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Deregisters a music zone from playback. </p>
@@ -267,7 +320,7 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/core/Music/<b>MusicZonePlayer.cs</b></li>
+<li><b>MusicZonePlayer.cs</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -6,6 +6,7 @@
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Jumpvalley: Jumpvalley.Music.MusicPlayer Class Reference</title>
+<link rel="icon" href="app_icon_round_256px.png" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="app_icon_round_64px.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Jumpvalley
+   <div id="projectname">Jumpvalley<span id="projectnumber">&#160;0.5.0</span>
    </div>
+   <div id="projectbrief">An app and library that can be used to test and run 3D platformer levels. Currently being made with Godot.</div>
   </td>
  </tr>
  </tbody>
@@ -102,6 +105,15 @@ Inheritance diagram for Jumpvalley.Music.MusicPlayer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:af97a034f3afbeb4e39bf0b96e78a5857" id="r_af97a034f3afbeb4e39bf0b96e78a5857"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af97a034f3afbeb4e39bf0b96e78a5857">ApplyOverrides</a> (<a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a> playlist)</td></tr>
+<tr class="memdesc:af97a034f3afbeb4e39bf0b96e78a5857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that can be overriden to define how playlists added to this music player should have their properties overriden. By default, overrides defined in the MusicPlayer class are applied here.  <br /></td></tr>
+<tr class="separator:af97a034f3afbeb4e39bf0b96e78a5857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a346e357b75fcc3d9fadf47d1d3e1ab6e" id="r_a346e357b75fcc3d9fadf47d1d3e1ab6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a346e357b75fcc3d9fadf47d1d3e1ab6e">RemovePlaylist</a> (<a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a> playlist)</td></tr>
+<tr class="memdesc:a346e357b75fcc3d9fadf47d1d3e1ab6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a playlist from this MusicPlayer. This will cause this MusicPlayer to no longer make changes to the removed Playlist.  <br /></td></tr>
+<tr class="separator:a346e357b75fcc3d9fadf47d1d3e1ab6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5051ed4a7210e797e92157718d7cf9d" id="r_ab5051ed4a7210e797e92157718d7cf9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5051ed4a7210e797e92157718d7cf9d">AddPlaylist</a> (<a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a> playlist)</td></tr>
+<tr class="memdesc:ab5051ed4a7210e797e92157718d7cf9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a playlist to this MusicPlayer. This will let this MusicPlayer make some changes to the added playlist.  <br /></td></tr>
+<tr class="separator:ab5051ed4a7210e797e92157718d7cf9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e48d52be9263712723134c373db0dc5" id="r_a6e48d52be9263712723134c373db0dc5"><td class="memItemLeft" align="right" valign="top"><a id="a6e48d52be9263712723134c373db0dc5" name="a6e48d52be9263712723134c373db0dc5"></a>
 new void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> ()</td></tr>
 <tr class="separator:a6e48d52be9263712723134c373db0dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,6 +128,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>OverrideTransitionTim
 double&#160;</td><td class="memItemRight" valign="bottom"><b>TransitionTime</b> = 0</td></tr>
 <tr class="memdesc:ab66b65a4940d0c9ef02ea3e744ef0dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playlists played by this music player will have their volume transition time set to the value of this variable whenever OverrideTransitionTime is set to true,. <br /></td></tr>
 <tr class="separator:ab66b65a4940d0c9ef02ea3e744ef0dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96b4a1618b2cde5b657b447a837a5fb" id="r_ad96b4a1618b2cde5b657b447a837a5fb"><td class="memItemLeft" align="right" valign="top"><a id="ad96b4a1618b2cde5b657b447a837a5fb" name="ad96b4a1618b2cde5b657b447a837a5fb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>OverrideLocalVolumeScale</b> = false</td></tr>
+<tr class="memdesc:ad96b4a1618b2cde5b657b447a837a5fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the a playlist's LocalVolumeScale will get set to VolumeScale whenever it gets played by this music player. <br /></td></tr>
+<tr class="separator:ad96b4a1618b2cde5b657b447a837a5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f89bd768fe4f4d0a058e0fc911c93dc" id="r_a1f89bd768fe4f4d0a058e0fc911c93dc"><td class="memItemLeft" align="right" valign="top"><a id="a1f89bd768fe4f4d0a058e0fc911c93dc" name="a1f89bd768fe4f4d0a058e0fc911c93dc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>OverrideSongStreamHandlingMode</b> = false</td></tr>
+<tr class="memdesc:a1f89bd768fe4f4d0a058e0fc911c93dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not playlist handled by this music player should have their Playlist.SongStreamHandlingMode property overriden to the value of this music player's SongStreamHandlingMode variable. <br /></td></tr>
+<tr class="separator:a1f89bd768fe4f4d0a058e0fc911c93dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78fc8d4d67230763a98abed041026b25" id="r_a78fc8d4d67230763a98abed041026b25"><td class="memItemLeft" align="right" valign="top"><a id="a78fc8d4d67230763a98abed041026b25" name="a78fc8d4d67230763a98abed041026b25"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShouldSetPlaylistParent</b></td></tr>
+<tr class="memdesc:a78fc8d4d67230763a98abed041026b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not this MusicPlayer should add/remove this music player as a parent when the AddPlaylist and RemovePlaylist methods are called. <br /></td></tr>
+<tr class="separator:a78fc8d4d67230763a98abed041026b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -128,10 +152,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnMusicPlayerSongChan
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:a1af3d1a504c956ca7b054ccd574c77c2" id="r_a1af3d1a504c956ca7b054ccd574c77c2"><td class="memItemLeft" align="right" valign="top"><a id="a1af3d1a504c956ca7b054ccd574c77c2" name="a1af3d1a504c956ca7b054ccd574c77c2"></a>
+List&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Playlists</b><code> [get]</code></td></tr>
+<tr class="memdesc:a1af3d1a504c956ca7b054ccd574c77c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playlists currently being handled by this MusicPlayer <br  />
+ <br /></td></tr>
+<tr class="separator:a1af3d1a504c956ca7b054ccd574c77c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07c76d088c5ddad2f762fc61c3d1acbe" id="r_a07c76d088c5ddad2f762fc61c3d1acbe"><td class="memItemLeft" align="right" valign="top"><a id="a07c76d088c5ddad2f762fc61c3d1acbe" name="a07c76d088c5ddad2f762fc61c3d1acbe"></a>
 <a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentPlaylist</b><code> [get, protected set]</code></td></tr>
 <tr class="memdesc:a07c76d088c5ddad2f762fc61c3d1acbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The playlist that's currently being played by the MusicPlayer. <br /></td></tr>
 <tr class="separator:a07c76d088c5ddad2f762fc61c3d1acbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd599f338414b6027df128f0779f698" id="r_a6cd599f338414b6027df128f0779f698"><td class="memItemLeft" align="right" valign="top"><a id="a6cd599f338414b6027df128f0779f698" name="a6cd599f338414b6027df128f0779f698"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>VolumeScale</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a6cd599f338414b6027df128f0779f698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playlists played by this music player will have their LocalVolumeScale set to the value of this variable whenever OverrideLocalVolumeScale is set to true,. <br /></td></tr>
+<tr class="separator:a6cd599f338414b6027df128f0779f698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdef9a544910a9ed462dadd118f470ec" id="r_acdef9a544910a9ed462dadd118f470ec"><td class="memItemLeft" align="right" valign="top"><a id="acdef9a544910a9ed462dadd118f470ec" name="acdef9a544910a9ed462dadd118f470ec"></a>
+<a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html#a47114cc451be69090edb4f0093c5ceaf">Playlist.SongStreamHandlingModeFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SongStreamHandlingMode</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:acdef9a544910a9ed462dadd118f470ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The song stream handling mode that the playlists handled by this music player should use if OverrideSongStreamHandlingMode is set to true. <br /></td></tr>
+<tr class="separator:acdef9a544910a9ed462dadd118f470ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf4daa1993840f8e527e0980f7e5ee1a" id="r_aaf4daa1993840f8e527e0980f7e5ee1a"><td class="memItemLeft" align="right" valign="top"><a id="aaf4daa1993840f8e527e0980f7e5ee1a" name="aaf4daa1993840f8e527e0980f7e5ee1a"></a>
 <a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PrimaryPlaylist</b><code> [get, set]</code></td></tr>
 <tr class="memdesc:aaf4daa1993840f8e527e0980f7e5ee1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The MusicPlayer's primary playlist. If set, this playlist will be played whenever IsPlaying is set to true. <br /></td></tr>
@@ -155,6 +192,72 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed
  This class applies a fade transition when the user wants to switch between playlists. <br  />
  Each instance of a MusicPlayer can only play one song at a time at most. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab5051ed4a7210e797e92157718d7cf9d" name="ab5051ed4a7210e797e92157718d7cf9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5051ed4a7210e797e92157718d7cf9d">&#9670;&#160;</a></span>AddPlaylist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jumpvalley.Music.MusicPlayer.AddPlaylist </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a></td>          <td class="paramname"><span class="paramname"><em>playlist</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds a playlist to this MusicPlayer. This will let this MusicPlayer make some changes to the added playlist. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playlist</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af97a034f3afbeb4e39bf0b96e78a5857" name="af97a034f3afbeb4e39bf0b96e78a5857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97a034f3afbeb4e39bf0b96e78a5857">&#9670;&#160;</a></span>ApplyOverrides()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Jumpvalley.Music.MusicPlayer.ApplyOverrides </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a></td>          <td class="paramname"><span class="paramname"><em>playlist</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method that can be overriden to define how playlists added to this music player should have their properties overriden. By default, overrides defined in the MusicPlayer class are applied here. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playlist</td><td>The playlist to apply overrides to</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9293373e67ab8a66f0066a6dd7e252c0" name="a9293373e67ab8a66f0066a6dd7e252c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9293373e67ab8a66f0066a6dd7e252c0">&#9670;&#160;</a></span>RefreshPlayback()</h2>
 
@@ -173,7 +276,7 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -184,8 +287,41 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed
 
 </div>
 </div>
+<a id="a346e357b75fcc3d9fadf47d1d3e1ab6e" name="a346e357b75fcc3d9fadf47d1d3e1ab6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a346e357b75fcc3d9fadf47d1d3e1ab6e">&#9670;&#160;</a></span>RemovePlaylist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jumpvalley.Music.MusicPlayer.RemovePlaylist </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Playlist</a></td>          <td class="paramname"><span class="paramname"><em>playlist</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes a playlist from this MusicPlayer. This will cause this MusicPlayer to no longer make changes to the removed Playlist. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playlist</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/core/Music/<b>MusicPlayer.cs</b></li>
+<li><b>MusicPlayer.cs</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

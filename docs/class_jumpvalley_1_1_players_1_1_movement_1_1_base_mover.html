@@ -6,6 +6,7 @@
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Jumpvalley: Jumpvalley.Players.Movement.BaseMover Class Reference</title>
+<link rel="icon" href="app_icon_round_256px.png" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="app_icon_round_64px.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Jumpvalley
+   <div id="projectname">Jumpvalley<span id="projectnumber">&#160;0.5.0</span>
    </div>
+   <div id="projectbrief">An app and library that can be used to test and run 3D platformer levels. Currently being made with Godot.</div>
   </td>
  </tr>
  </tbody>
@@ -95,11 +98,8 @@ $(function() {
 Inheritance diagram for Jumpvalley.Players.Movement.BaseMover:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_jumpvalley_1_1_players_1_1_movement_1_1_base_mover.png" usemap="#Jumpvalley.Players.Movement.BaseMover_map" alt=""/>
-  <map id="Jumpvalley.Players.Movement.BaseMover_map" name="Jumpvalley.Players.Movement.BaseMover_map">
-<area href="class_jumpvalley_1_1_players_1_1_movement_1_1_keyboard_mover.html" title="Subclass of BaseMover that handles character movement via keyboard input." alt="Jumpvalley.Players.Movement.KeyboardMover" shape="rect" coords="145,112,426,136"/>
-  </map>
-</div></div>
+  <img src="class_jumpvalley_1_1_players_1_1_movement_1_1_base_mover.png" alt=""/>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -130,6 +130,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3bc9639190fc2d696e1e839588cbe14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and returns the move vector that the player wants to move the character in, regardless of whether or not they're currently jumping or climbing. <br  />
  The calculated move vector can be rotated to a specified yaw angle. This is useful when you want to make the character move in the direction that the camera is facing.  <br /></td></tr>
 <tr class="separator:a3bc9639190fc2d696e1e839588cbe14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f8cd06d1d41703c17506fb818589eb8" id="r_a3f8cd06d1d41703c17506fb818589eb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f8cd06d1d41703c17506fb818589eb8">IsTryingToMove</a> ()</td></tr>
+<tr class="memdesc:a3f8cd06d1d41703c17506fb818589eb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not the character is trying to move. <br  />
+<br  />
+ The character is considered to want to move when either ForwardValue or RightValue isn't zero.  <br /></td></tr>
+<tr class="separator:a3f8cd06d1d41703c17506fb818589eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba6dc8baf480c954eac2a084fa16b2dd" id="r_aba6dc8baf480c954eac2a084fa16b2dd"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba6dc8baf480c954eac2a084fa16b2dd">GetMoveVelocity</a> (float delta, float yaw)</td></tr>
 <tr class="memdesc:aba6dc8baf480c954eac2a084fa16b2dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the velocity that the character wants to move at for the current physics frame.  <br /></td></tr>
 <tr class="separator:aba6dc8baf480c954eac2a084fa16b2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,13 +166,37 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>Gravity</b> = 9.8f</
 <tr class="separator:a50f3dd56234bf2bb38e62c72e96c0dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e05785c177e801547a54ec9243536e0" id="r_a1e05785c177e801547a54ec9243536e0"><td class="memItemLeft" align="right" valign="top"><a id="a1e05785c177e801547a54ec9243536e0" name="a1e05785c177e801547a54ec9243536e0"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>JumpVelocity</b> = 5f</td></tr>
-<tr class="memdesc:a1e05785c177e801547a54ec9243536e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The initial velocity of the character's jump. <br /></td></tr>
+<tr class="memdesc:a1e05785c177e801547a54ec9243536e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The initial Y-velocity of the character's jump. <br /></td></tr>
 <tr class="separator:a1e05785c177e801547a54ec9243536e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a690cad6ef42196aa3953cfb729be11cb" id="r_a690cad6ef42196aa3953cfb729be11cb"><td class="memItemLeft" align="right" valign="top"><a id="a690cad6ef42196aa3953cfb729be11cb" name="a690cad6ef42196aa3953cfb729be11cb"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>Acceleration</b> = 16f</td></tr>
-<tr class="memdesc:a690cad6ef42196aa3953cfb729be11cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The acceleration that the character's velocity changes at. <br  />
+<tr class="memdesc:a690cad6ef42196aa3953cfb729be11cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The acceleration that the character's XZ velocity increases at while the character is trying to move on the ground. <br  />
  This doesn't affect upward and downward movement, and therefore, this only affects X and Z movement. <br /></td></tr>
 <tr class="separator:a690cad6ef42196aa3953cfb729be11cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3fba8585dada55896ec2b542f40408" id="r_aff3fba8585dada55896ec2b542f40408"><td class="memItemLeft" align="right" valign="top"><a id="aff3fba8585dada55896ec2b542f40408" name="aff3fba8585dada55896ec2b542f40408"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>AirAcceleration</b> = 8f</td></tr>
+<tr class="memdesc:aff3fba8585dada55896ec2b542f40408"><td class="mdescLeft">&#160;</td><td class="mdescRight">The acceleration that the character's XZ velocity increases at while in the air. <br /></td></tr>
+<tr class="separator:aff3fba8585dada55896ec2b542f40408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21112dd365e4d4956ba64578342ef057" id="r_a21112dd365e4d4956ba64578342ef057"><td class="memItemLeft" align="right" valign="top"><a id="a21112dd365e4d4956ba64578342ef057" name="a21112dd365e4d4956ba64578342ef057"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Deceleration</b> = 16f</td></tr>
+<tr class="memdesc:a21112dd365e4d4956ba64578342ef057"><td class="mdescLeft">&#160;</td><td class="mdescRight">The deceleration that the character's XZ velocity decreases at when on the ground and one of these other conditions is true: </p><ul>
+<li>
+The character is trying to stop </li>
+<li>
+The character has exceeded max speed </li>
+</ul>
+<br /></td></tr>
+<tr class="separator:a21112dd365e4d4956ba64578342ef057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb26b4d347a9bb198a6a1464fa8332bd" id="r_aeb26b4d347a9bb198a6a1464fa8332bd"><td class="memItemLeft" align="right" valign="top"><a id="aeb26b4d347a9bb198a6a1464fa8332bd" name="aeb26b4d347a9bb198a6a1464fa8332bd"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>AirDeceleration</b> = 8f</td></tr>
+<tr class="memdesc:aeb26b4d347a9bb198a6a1464fa8332bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The deceleration that the character's XZ velocity decreases at when in the air and one of these other conditions is true: </p><ul>
+<li>
+The character is trying to stop </li>
+<li>
+The character has exceeded max speed </li>
+</ul>
+<br /></td></tr>
+<tr class="separator:aeb26b4d347a9bb198a6a1464fa8332bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6c0791e3c829fec5d5270a52e2fba4e" id="r_ad6c0791e3c829fec5d5270a52e2fba4e"><td class="memItemLeft" align="right" valign="top"><a id="ad6c0791e3c829fec5d5270a52e2fba4e" name="ad6c0791e3c829fec5d5270a52e2fba4e"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>CameraYaw</b> = 0</td></tr>
 <tr class="memdesc:ad6c0791e3c829fec5d5270a52e2fba4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current yaw angle of the camera that's currently associated with the character. <br /></td></tr>
@@ -197,6 +226,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a97d536ba9b31422dc21c39f3a2e227dd" id="r_a97d536ba9b31422dc21c39f3a2e227dd"><td class="memItemLeft" align="right" valign="top"><a id="a97d536ba9b31422dc21c39f3a2e227dd" name="a97d536ba9b31422dc21c39f3a2e227dd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RaiseBodyStateChangedEvent</b> (<a class="el" href="#a2032b9a3569a4eaa6100ca63fc029348">BodyState</a> oldState, <a class="el" href="#a2032b9a3569a4eaa6100ca63fc029348">BodyState</a> newState)</td></tr>
 <tr class="separator:a97d536ba9b31422dc21c39f3a2e227dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed9767323791818e65fd72f058dfd74" id="r_a5ed9767323791818e65fd72f058dfd74"><td class="memItemLeft" align="right" valign="top"><a id="a5ed9767323791818e65fd72f058dfd74" name="a5ed9767323791818e65fd72f058dfd74"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RaiseOnFastTurnToggled</b> (bool fastTurnEnabled)</td></tr>
+<tr class="separator:a5ed9767323791818e65fd72f058dfd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -208,10 +240,10 @@ Properties</h2></td></tr>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>Speed</b><code> [get, set]</code></td></tr>
 <tr class="memdesc:a731f08699495fec93b227f0973319337"><td class="mdescLeft">&#160;</td><td class="mdescRight">How fast the character can move in meters per second. <br /></td></tr>
 <tr class="separator:a731f08699495fec93b227f0973319337"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a44b73d3cc9fd6ec9ecbf8b3d948149" id="r_a6a44b73d3cc9fd6ec9ecbf8b3d948149"><td class="memItemLeft" align="right" valign="top"><a id="a6a44b73d3cc9fd6ec9ecbf8b3d948149" name="a6a44b73d3cc9fd6ec9ecbf8b3d948149"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRotationLocked</b><code> [get, set]</code></td></tr>
-<tr class="memdesc:a6a44b73d3cc9fd6ec9ecbf8b3d948149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the character's yaw is locked to some specified yaw angle. <br /></td></tr>
-<tr class="separator:a6a44b73d3cc9fd6ec9ecbf8b3d948149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11cb5b5906424080faaf57e6a5b849e1" id="r_a11cb5b5906424080faaf57e6a5b849e1"><td class="memItemLeft" align="right" valign="top"><a id="a11cb5b5906424080faaf57e6a5b849e1" name="a11cb5b5906424080faaf57e6a5b849e1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsFastTurnEnabled</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a11cb5b5906424080faaf57e6a5b849e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the value of this property is true, the character's yaw angle will instantly be set to a specified "destination" yaw (for example, the current yaw of a BaseCamera). Otherwise, while the character is moving, the character's yaw will gradually approach the destination yaw until the character's yaw and the destination yaw match. <br /></td></tr>
+<tr class="separator:a11cb5b5906424080faaf57e6a5b849e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c6d6e19854e58309bd0d0cbe71a4a3b" id="r_a5c6d6e19854e58309bd0d0cbe71a4a3b"><td class="memItemLeft" align="right" valign="top"><a id="a5c6d6e19854e58309bd0d0cbe71a4a3b" name="a5c6d6e19854e58309bd0d0cbe71a4a3b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRunning</b><code> [get, set]</code></td></tr>
 <tr class="memdesc:a5c6d6e19854e58309bd0d0cbe71a4a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the BaseMover is actively updating every physics and process frame. <br /></td></tr>
@@ -239,6 +271,10 @@ Events</h2></td></tr>
 EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1_1_body_state_changed_args.html">BodyStateChangedArgs</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>BodyStateChanged</b></td></tr>
 <tr class="memdesc:ad06765423e06e2029aea778abe6d1893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that's raised when the character being moved by this BaseMover changes. <br /></td></tr>
 <tr class="separator:ad06765423e06e2029aea778abe6d1893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca1110c0efa8e6e07efd23513e5bf66" id="r_abca1110c0efa8e6e07efd23513e5bf66"><td class="memItemLeft" align="right" valign="top"><a id="abca1110c0efa8e6e07efd23513e5bf66" name="abca1110c0efa8e6e07efd23513e5bf66"></a>
+EventHandler&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnFastTurnToggled</b></td></tr>
+<tr class="memdesc:abca1110c0efa8e6e07efd23513e5bf66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that's raised when the value of IsFastTurnEnabled changes. The boolean event argument is the new value of IsFastTurnEnabled. <br /></td></tr>
+<tr class="separator:abca1110c0efa8e6e07efd23513e5bf66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the base class that provides a player's character the ability to move in different directions, jump, and climb. It serves mainly as a controller interface for developers to build on. <br  />
@@ -282,6 +318,9 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">new void Jumpvalley.Players.Movement.BaseMover.Dispose </td>
@@ -290,6 +329,11 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Callback to associate with the normal process step in the current scene tree. </p>
@@ -308,6 +352,9 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Vector3 Jumpvalley.Players.Movement.BaseMover.GetMoveVector </td>
@@ -316,6 +363,11 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Calculates and returns the move vector that the player wants to move the character in, regardless of whether or not they're currently jumping or climbing. <br  />
@@ -335,6 +387,9 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Vector3 Jumpvalley.Players.Movement.BaseMover.GetMoveVelocity </td>
@@ -347,6 +402,11 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>yaw</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Gets the velocity that the character wants to move at for the current physics frame. </p>
@@ -366,6 +426,9 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Jumpvalley.Players.Movement.BaseMover.HandlePhysicsStep </td>
@@ -374,6 +437,11 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Callback to associate with the physics process step in the current scene tree. </p>
@@ -391,6 +459,9 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Jumpvalley.Players.Movement.BaseMover.IsOnFloor </td>
@@ -399,6 +470,11 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns whether or not the associated CharacterBody3D is on the floor. </p>
@@ -406,8 +482,38 @@ EventHandler&lt; <a class="el" href="class_jumpvalley_1_1_players_1_1_movement_1
 
 </div>
 </div>
+<a id="a3f8cd06d1d41703c17506fb818589eb8" name="a3f8cd06d1d41703c17506fb818589eb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f8cd06d1d41703c17506fb818589eb8">&#9670;&#160;</a></span>IsTryingToMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Jumpvalley.Players.Movement.BaseMover.IsTryingToMove </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns whether or not the character is trying to move. <br  />
+<br  />
+ The character is considered to want to move when either ForwardValue or RightValue isn't zero. </p>
+<dl class="section return"><dt>Returns</dt><dd>Whether or not the character is trying to move. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/core/Players/Movement/<b>BaseMover.cs</b></li>
+<li><b>BaseMover.cs</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

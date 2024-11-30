@@ -6,6 +6,7 @@
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Jumpvalley: Jumpvalley.Levels.DifficultyPresets Class Reference</title>
+<link rel="icon" href="app_icon_round_256px.png" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="app_icon_round_64px.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Jumpvalley
+   <div id="projectname">Jumpvalley<span id="projectnumber">&#160;0.5.0</span>
    </div>
+   <div id="projectbrief">An app and library that can be used to test and run 3D platformer levels. Currently being made with Godot.</div>
   </td>
  </tr>
  </tbody>
@@ -76,37 +79,47 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_jumpvalley_1_1_levels_1_1_difficulty_presets-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Jumpvalley.Levels.DifficultyPresets Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Difficulty presets taken from difficulty-rating systems already established by various communities.  
+<p>This class contains some difficulty sets that can be used to label the difficulty of a level. <br  />
+<br  />
+ Currently, the difficulty sets here have one of these characteristics: </p><ul>
+<li>
+It's directly from a game or community  </li>
+<li>
+It's from a game or community, but it's been modified.  </li>
+</ul>
+ 
  <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac36afb0c9513b118939de4561cace63e" id="r_ac36afb0c9513b118939de4561cace63e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_jumpvalley_1_1_levels_1_1_difficulty.html">Difficulty</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac36afb0c9513b118939de4561cace63e">GetPrimaryDifficultyFromRating</a> (double rating)</td></tr>
-<tr class="separator:ac36afb0c9513b118939de4561cace63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a6e98dbbf16b25990d07f28baaa239c0a" id="r_a6e98dbbf16b25990d07f28baaa239c0a"><td class="memItemLeft" align="right" valign="top"><a id="a6e98dbbf16b25990d07f28baaa239c0a" name="a6e98dbbf16b25990d07f28baaa239c0a"></a>
 static readonly <a class="el" href="class_jumpvalley_1_1_levels_1_1_difficulty.html">Difficulty</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FALLBACK</b> = new <a class="el" href="class_jumpvalley_1_1_levels_1_1_difficulty.html">Difficulty</a>()</td></tr>
 <tr class="memdesc:a6e98dbbf16b25990d07f28baaa239c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Failsafe difficulty to default to, just in case. <br /></td></tr>
 <tr class="separator:a6e98dbbf16b25990d07f28baaa239c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa195393a9fa1bb4a81e0205b5a3b286f" id="r_aa195393a9fa1bb4a81e0205b5a3b286f"><td class="memItemLeft" align="right" valign="top">static readonly List&lt; <a class="el" href="class_jumpvalley_1_1_levels_1_1_difficulty.html">Difficulty</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa195393a9fa1bb4a81e0205b5a3b286f">PRIMARY</a></td></tr>
-<tr class="memdesc:aa195393a9fa1bb4a81e0205b5a3b286f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_jumpvalley.html">Jumpvalley</a>'s main set of difficulties. These are taken directly from Juke's Towers of Hell. <br  />
- Note that <a class="el" href="namespace_jumpvalley.html">Jumpvalley</a> may use a different set of difficulty ratings in the future.  <br /></td></tr>
-<tr class="separator:aa195393a9fa1bb4a81e0205b5a3b286f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f289bb4f5dd72eb8dd973ae8dc28577" id="r_a8f289bb4f5dd72eb8dd973ae8dc28577"><td class="memItemLeft" align="right" valign="top">static readonly <a class="el" href="class_jumpvalley_1_1_levels_1_1_difficulty_set.html">DifficultySet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f289bb4f5dd72eb8dd973ae8dc28577">PRIMARY_DIFFICULTIES</a></td></tr>
+<tr class="memdesc:a8f289bb4f5dd72eb8dd973ae8dc28577"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_jumpvalley.html">Jumpvalley</a>'s main set of difficulties. <br  />
+<br  />
+ The names of difficulties in this set come from the Celestecommunity.  <br /></td></tr>
+<tr class="separator:a8f289bb4f5dd72eb8dd973ae8dc28577"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Difficulty presets taken from difficulty-rating systems already established by various communities. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac36afb0c9513b118939de4561cace63e" name="ac36afb0c9513b118939de4561cace63e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac36afb0c9513b118939de4561cace63e">&#9670;&#160;</a></span>GetPrimaryDifficultyFromRating()</h2>
+<div class="textblock"><p>This class contains some difficulty sets that can be used to label the difficulty of a level. <br  />
+<br  />
+ Currently, the difficulty sets here have one of these characteristics: </p><ul>
+<li>
+It's directly from a game or community  </li>
+<li>
+It's from a game or community, but it's been modified.  </li>
+</ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8f289bb4f5dd72eb8dd973ae8dc28577" name="a8f289bb4f5dd72eb8dd973ae8dc28577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f289bb4f5dd72eb8dd973ae8dc28577">&#9670;&#160;</a></span>PRIMARY_DIFFICULTIES</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -115,10 +128,7 @@ static readonly <a class="el" href="class_jumpvalley_1_1_levels_1_1_difficulty.h
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="class_jumpvalley_1_1_levels_1_1_difficulty.html">Difficulty</a> Jumpvalley.Levels.DifficultyPresets.GetPrimaryDifficultyFromRating </td>
-          <td>(</td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>rating</em></span></td><td>)</td>
-          <td></td>
+          <td class="memname">readonly <a class="el" href="class_jumpvalley_1_1_levels_1_1_difficulty_set.html">DifficultySet</a> Jumpvalley.Levels.DifficultyPresets.PRIMARY_DIFFICULTIES</td>
         </tr>
       </table>
   </td>
@@ -127,58 +137,28 @@ static readonly <a class="el" href="class_jumpvalley_1_1_levels_1_1_difficulty.h
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The difficulty in the PRIMARY list associated with the given numerical rating specified in the <em>rating</em>  parameter. </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="aa195393a9fa1bb4a81e0205b5a3b286f" name="aa195393a9fa1bb4a81e0205b5a3b286f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa195393a9fa1bb4a81e0205b5a3b286f">&#9670;&#160;</a></span>PRIMARY</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">readonly List&lt;<a class="el" href="class_jumpvalley_1_1_levels_1_1_difficulty.html">Difficulty</a>&gt; Jumpvalley.Levels.DifficultyPresets.PRIMARY</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> List&lt;Difficulty&gt;</div>
-<div class="line">        {</div>
-<div class="line">            </div>
-<div class="line">            <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Effortless&quot;</span>, 0, Color.Color8(0, 206, 0)),</div>
-<div class="line">            <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Easy&quot;</span>, 1, Color.Color8(117, 243, 71)),</div>
-<div class="line">            <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Medium&quot;</span>, 2, Color.Color8(0, 206, 0)),</div>
-<div class="line">            <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Hard&quot;</span>, 3, Color.Color8(253, 124, 0)),</div>
-<div class="line">            <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Difficult&quot;</span>, 4, Color.Color8(255, 12, 4)),</div>
-<div class="line">            <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Challenging&quot;</span>, 5, Color.Color8(193, 0, 0)),</div>
-<div class="line">            <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Intense&quot;</span>, 6, Color.Color8(25, 40, 50)),</div>
-<div class="line">            <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Remorseless&quot;</span>, 7, Color.Color8(200, 0, 200)),</div>
-<div class="line">            <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Insane&quot;</span>, 8, Color.Color8(0, 0, 255)),</div>
-<div class="line">            <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Extreme&quot;</span>, 9, Color.Color8(3, 137, 255)),</div>
-<div class="line">            <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Terrifying&quot;</span>, 10, Color.Color8(0, 255, 255)),</div>
-<div class="line">            <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Catastrophic&quot;</span>, 11, Color.Color8(255, 255, 255)),</div>
-<div class="line"> </div>
-<div class="line">            </div>
-<div class="line">            <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Horrific&quot;</span>, 12, Color.Color8(140, 139, 238)),</div>
-<div class="line">            <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Unreal&quot;</span>, 13, Color.Color8(81, 0, 203))</div>
-<div class="line">        }</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> DifficultySet(</div>
+<div class="line">            <span class="keyword">new</span> List&lt;Difficulty&gt;()</div>
+<div class="line">            {</div>
+<div class="line">                <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Beginner&quot;</span>, 0.0, <span class="keyword">new</span> Color(90f / 360f, 0.41f, 1f)),</div>
+<div class="line">                <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Intermediate&quot;</span>, 20.0, <span class="keyword">new</span> Color(60f / 360f, 0.44f, 1f)),</div>
+<div class="line">                <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Advanced&quot;</span>, 40.0, <span class="keyword">new</span> Color(30f / 360f, 0.47f, 0.88f)),</div>
+<div class="line">                <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Expert&quot;</span>, 60.0, <span class="keyword">new</span> Color(0f / 360f, 0.53f, 1f)),</div>
+<div class="line">                <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;Grandmaster&quot;</span>, 80.0, <span class="keyword">new</span> Color(330f / 360f, 0.47f, 1f)),</div>
+<div class="line">                <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;GM+1&quot;</span>, 100.0, <span class="keyword">new</span> Color(300f / 360f, 0.55f, 1f)),</div>
+<div class="line">                <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;GM+2&quot;</span>, 120.0, <span class="keyword">new</span> Color(270f / 360f, 0.6f, 1f)),</div>
+<div class="line">                <span class="keyword">new</span> Difficulty(<span class="stringliteral">&quot;GM+3&quot;</span>, 140.0, <span class="keyword">new</span> Color(240f / 360f, 0.92f, 1f)),</div>
+<div class="line">            }</div>
+<div class="line">        )</div>
 </div><!-- fragment -->
-<p><a class="el" href="namespace_jumpvalley.html">Jumpvalley</a>'s main set of difficulties. These are taken directly from Juke's Towers of Hell. <br  />
- Note that <a class="el" href="namespace_jumpvalley.html">Jumpvalley</a> may use a different set of difficulty ratings in the future. </p>
+<p><a class="el" href="namespace_jumpvalley.html">Jumpvalley</a>'s main set of difficulties. <br  />
+<br  />
+ The names of difficulties in this set come from the Celestecommunity. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/core/Levels/<b>DifficultyPresets.cs</b></li>
+<li><b>DifficultyPresets.cs</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

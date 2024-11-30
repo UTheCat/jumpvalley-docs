@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['userenabledshiftlock_0',['UserEnabledShiftLock',['../class_jumpvalley_1_1_players_1_1_movement_1_1_rotation_lock_control.html#a947ea5c9e3b57a6bc25dc089124e2582',1,'Jumpvalley::Players::Movement::RotationLockControl']]]
+  ['volumescale_0',['VolumeScale',['../class_jumpvalley_1_1_music_1_1_music_player.html#a6cd599f338414b6027df128f0779f698',1,'Jumpvalley::Music::MusicPlayer']]]
 ];

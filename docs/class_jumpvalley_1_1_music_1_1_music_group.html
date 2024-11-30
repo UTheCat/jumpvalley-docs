@@ -6,6 +6,7 @@
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Jumpvalley: Jumpvalley.Music.MusicGroup Class Reference</title>
+<link rel="icon" href="app_icon_round_256px.png" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="app_icon_round_64px.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Jumpvalley
+   <div id="projectname">Jumpvalley<span id="projectnumber">&#160;0.5.0</span>
    </div>
+   <div id="projectbrief">An app and library that can be used to test and run 3D platformer levels. Currently being made with Godot.</div>
   </td>
  </tr>
  </tbody>
@@ -86,7 +89,14 @@ $(function() {
 
 <p>Handles a Playlist that's in the form of nodes in a scene tree. <br  />
  Each MusicGroup node must have a node as a direct child named "Music" that lists the directory (folder) paths of songs in its metadata. <br  />
- The metadata has to list each song's folder in this format: <br  />
+<br  />
+ There are two ways to specify songs that should be played: <br  />
+<br  />
+ <b>songs array in metadata</b> <br  />
+ The metadata (as mentioned above) has an array named <code>songs</code> that specifies the songs to play. The array's C# type should be Godot.Collections.Array. <br  />
+<br  />
+ <b>Incremental songN metadata entries</b> <br  />
+ This method is used when no songs array is present in the metadata. Multiple metadata entries should be specified in this format: <br  />
  Entry name: <code>songN</code> where N represents the numerical index of the song package directory starting from 1. Songs are played in numerical order. <br  />
  Entry value: The absolute path to the song's directory. (The value's type must be string.)  
  <a href="#details">More...</a></p>
@@ -142,6 +152,10 @@ Static Public Attributes</h2></td></tr>
 static readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>SONG_METADATA_ENTRY_PREFIX</b> = &quot;song&quot;</td></tr>
 <tr class="memdesc:ae055cff43821318421dada460eb2b7a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The prefix of the song metadata entry name within MusicListNode <br /></td></tr>
 <tr class="separator:ae055cff43821318421dada460eb2b7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a448bf63774dc97d60b112af5697ef6b8" id="r_a448bf63774dc97d60b112af5697ef6b8"><td class="memItemLeft" align="right" valign="top"><a id="a448bf63774dc97d60b112af5697ef6b8" name="a448bf63774dc97d60b112af5697ef6b8"></a>
+static readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>SONGS_META_NAME</b> = &quot;songs&quot;</td></tr>
+<tr class="memdesc:a448bf63774dc97d60b112af5697ef6b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the metadata entry storing the songs array. <br /></td></tr>
+<tr class="separator:a448bf63774dc97d60b112af5697ef6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bd17734bc362e38c4e1b1640f2633db" id="r_a8bd17734bc362e38c4e1b1640f2633db"><td class="memItemLeft" align="right" valign="top"><a id="a8bd17734bc362e38c4e1b1640f2633db" name="a8bd17734bc362e38c4e1b1640f2633db"></a>
 static readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>MUSIC_LIST_NODE_NAME</b> = &quot;Music&quot;</td></tr>
 <tr class="memdesc:a8bd17734bc362e38c4e1b1640f2633db"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the node that contains the list of songs as metadata. <br /></td></tr>
@@ -183,6 +197,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>LinearVolume</b><co
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_jumpvalley_1_1_music_1_1_playlist"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_class_jumpvalley_1_1_music_1_1_playlist')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Jumpvalley.Music.Playlist</a></td></tr>
+<tr class="memitem:a47114cc451be69090edb4f0093c5ceaf inherit pub_types_class_jumpvalley_1_1_music_1_1_playlist" id="r_a47114cc451be69090edb4f0093c5ceaf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html#a47114cc451be69090edb4f0093c5ceaf">SongStreamHandlingModeFlags</a> { <a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html#a47114cc451be69090edb4f0093c5ceafab9f5c797ebbf55adccdd8539a65a0241">Disabled</a> = 0
+, <a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html#a47114cc451be69090edb4f0093c5ceafa703edb99add78b4fe95478e9e1dba03f">AddAndRemove</a> = 1
+ }</td></tr>
+<tr class="memdesc:a47114cc451be69090edb4f0093c5ceaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerator that specifies how a Playlist should approach opening and closing the audio streams of its Song instances.  <a href="class_jumpvalley_1_1_music_1_1_playlist.html#a47114cc451be69090edb4f0093c5ceaf">More...</a><br /></td></tr>
+<tr class="separator:a47114cc451be69090edb4f0093c5ceaf inherit pub_types_class_jumpvalley_1_1_music_1_1_playlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_jumpvalley_1_1_music_1_1_playlist"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_jumpvalley_1_1_music_1_1_playlist')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Jumpvalley.Music.Playlist</a></td></tr>
 <tr class="memitem:a4c8dcd097a5639b8bb83f8729c724c6c inherit pub_static_methods_class_jumpvalley_1_1_music_1_1_playlist" id="r_a4c8dcd097a5639b8bb83f8729c724c6c"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html#a4c8dcd097a5639b8bb83f8729c724c6c">VolPercentToDecibels</a> (float percent)</td></tr>
 <tr class="memdesc:a4c8dcd097a5639b8bb83f8729c724c6c inherit pub_static_methods_class_jumpvalley_1_1_music_1_1_playlist"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a volume percentage in the range of [0, 1] to the corresponding value in decibels and returns the result.  <br /></td></tr>
@@ -192,6 +212,10 @@ Additional Inherited Members</h2></td></tr>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>TransitionTime</b> = 0</td></tr>
 <tr class="memdesc:a54716897180c1698685581dfe087c6dd inherit pub_attribs_class_jumpvalley_1_1_music_1_1_playlist"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of seconds that the volume transitioning lasts when uninterrupted. <br /></td></tr>
 <tr class="separator:a54716897180c1698685581dfe087c6dd inherit pub_attribs_class_jumpvalley_1_1_music_1_1_playlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1165bb8ab1c9c28743008f7142ea0238 inherit pub_attribs_class_jumpvalley_1_1_music_1_1_playlist" id="r_a1165bb8ab1c9c28743008f7142ea0238"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html#a47114cc451be69090edb4f0093c5ceaf">SongStreamHandlingModeFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SongStreamHandlingMode</b></td></tr>
+<tr class="memdesc:a1165bb8ab1c9c28743008f7142ea0238 inherit pub_attribs_class_jumpvalley_1_1_music_1_1_playlist"><td class="mdescLeft">&#160;</td><td class="mdescRight">How the playlist is currently opening and closing audio streams of its songs. <br /></td></tr>
+<tr class="separator:a1165bb8ab1c9c28743008f7142ea0238 inherit pub_attribs_class_jumpvalley_1_1_music_1_1_playlist"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_jumpvalley_1_1_music_1_1_playlist"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_jumpvalley_1_1_music_1_1_playlist')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_jumpvalley_1_1_music_1_1_playlist.html">Jumpvalley.Music.Playlist</a></td></tr>
 <tr class="memitem:a64d2bc662a873a88626b3473641f008d inherit pro_methods_class_jumpvalley_1_1_music_1_1_playlist" id="r_a64d2bc662a873a88626b3473641f008d"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleTweenFinish</b> (object _o, EventArgs _e)</td></tr>
@@ -220,7 +244,14 @@ EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>Stopped</b></
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handles a Playlist that's in the form of nodes in a scene tree. <br  />
  Each MusicGroup node must have a node as a direct child named "Music" that lists the directory (folder) paths of songs in its metadata. <br  />
- The metadata has to list each song's folder in this format: <br  />
+<br  />
+ There are two ways to specify songs that should be played: <br  />
+<br  />
+ <b>songs array in metadata</b> <br  />
+ The metadata (as mentioned above) has an array named <code>songs</code> that specifies the songs to play. The array's C# type should be Godot.Collections.Array. <br  />
+<br  />
+ <b>Incremental songN metadata entries</b> <br  />
+ This method is used when no songs array is present in the metadata. Multiple metadata entries should be specified in this format: <br  />
  Entry name: <code>songN</code> where N represents the numerical index of the song package directory starting from 1. Songs are played in numerical order. <br  />
  Entry value: The absolute path to the song's directory. (The value's type must be string.) </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -229,6 +260,9 @@ EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>Stopped</b></
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Jumpvalley.Music.MusicGroup.MusicGroup </td>
@@ -237,6 +271,11 @@ EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>Stopped</b></
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Creates an instance of MusicGroup to represent a specified node. </p>
@@ -250,7 +289,7 @@ EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>Stopped</b></
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/core/Music/<b>MusicGroup.cs</b></li>
+<li><b>MusicGroup.cs</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

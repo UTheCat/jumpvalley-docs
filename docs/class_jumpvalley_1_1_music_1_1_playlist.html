@@ -6,6 +6,7 @@
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Jumpvalley: Jumpvalley.Music.Playlist Class Reference</title>
+<link rel="icon" href="app_icon_round_256px.png" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="app_icon_round_64px.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Jumpvalley
+   <div id="projectname">Jumpvalley<span id="projectnumber">&#160;0.5.0</span>
    </div>
+   <div id="projectbrief">An app and library that can be used to test and run 3D platformer levels. Currently being made with Godot.</div>
   </td>
  </tr>
  </tbody>
@@ -76,6 +79,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -101,6 +105,14 @@ Inheritance diagram for Jumpvalley.Music.Playlist:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a47114cc451be69090edb4f0093c5ceaf" id="r_a47114cc451be69090edb4f0093c5ceaf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47114cc451be69090edb4f0093c5ceaf">SongStreamHandlingModeFlags</a> { <a class="el" href="#a47114cc451be69090edb4f0093c5ceafab9f5c797ebbf55adccdd8539a65a0241">Disabled</a> = 0
+, <a class="el" href="#a47114cc451be69090edb4f0093c5ceafa703edb99add78b4fe95478e9e1dba03f">AddAndRemove</a> = 1
+ }</td></tr>
+<tr class="memdesc:a47114cc451be69090edb4f0093c5ceaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerator that specifies how a Playlist should approach opening and closing the audio streams of its Song instances.  <a href="#a47114cc451be69090edb4f0093c5ceaf">More...</a><br /></td></tr>
+<tr class="separator:a47114cc451be69090edb4f0093c5ceaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a855ff4f32fb3c9ae8d91f7f5f41de87f" id="r_a855ff4f32fb3c9ae8d91f7f5f41de87f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a855ff4f32fb3c9ae8d91f7f5f41de87f">Add</a> (<a class="el" href="class_jumpvalley_1_1_music_1_1_song.html">Song</a> s)</td></tr>
@@ -140,6 +152,10 @@ Public Attributes</h2></td></tr>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>TransitionTime</b> = 0</td></tr>
 <tr class="memdesc:a54716897180c1698685581dfe087c6dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of seconds that the volume transitioning lasts when uninterrupted. <br /></td></tr>
 <tr class="separator:a54716897180c1698685581dfe087c6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1165bb8ab1c9c28743008f7142ea0238" id="r_a1165bb8ab1c9c28743008f7142ea0238"><td class="memItemLeft" align="right" valign="top"><a id="a1165bb8ab1c9c28743008f7142ea0238" name="a1165bb8ab1c9c28743008f7142ea0238"></a>
+<a class="el" href="#a47114cc451be69090edb4f0093c5ceaf">SongStreamHandlingModeFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SongStreamHandlingMode</b></td></tr>
+<tr class="memdesc:a1165bb8ab1c9c28743008f7142ea0238"><td class="mdescLeft">&#160;</td><td class="mdescRight">How the playlist is currently opening and closing audio streams of its songs. <br /></td></tr>
+<tr class="separator:a1165bb8ab1c9c28743008f7142ea0238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -194,12 +210,38 @@ EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>Stopped</b></
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a musical playlist that can hold multiple Songs. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a47114cc451be69090edb4f0093c5ceaf" name="a47114cc451be69090edb4f0093c5ceaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47114cc451be69090edb4f0093c5ceaf">&#9670;&#160;</a></span>SongStreamHandlingModeFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a47114cc451be69090edb4f0093c5ceaf">Jumpvalley.Music.Playlist.SongStreamHandlingModeFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumerator that specifies how a Playlist should approach opening and closing the audio streams of its Song instances. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a47114cc451be69090edb4f0093c5ceafab9f5c797ebbf55adccdd8539a65a0241" name="a47114cc451be69090edb4f0093c5ceafab9f5c797ebbf55adccdd8539a65a0241"></a>Disabled&#160;</td><td class="fielddoc"><p>Specifies that the Playlist shouldn't open or close the audio streams of Song instances it handles. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a47114cc451be69090edb4f0093c5ceafa703edb99add78b4fe95478e9e1dba03f" name="a47114cc451be69090edb4f0093c5ceafa703edb99add78b4fe95478e9e1dba03f"></a>AddAndRemove&#160;</td><td class="fielddoc"><p>Specifies that the Playlist should open a song's audio stream when it's added to the playlist, and close a song's audio stream when it's removed from the playlist. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a855ff4f32fb3c9ae8d91f7f5f41de87f" name="a855ff4f32fb3c9ae8d91f7f5f41de87f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a855ff4f32fb3c9ae8d91f7f5f41de87f">&#9670;&#160;</a></span>Add()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Jumpvalley.Music.Playlist.Add </td>
@@ -208,6 +250,11 @@ EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>Stopped</b></
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds a song to the playlist. </p>
@@ -225,6 +272,9 @@ EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>Stopped</b></
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Jumpvalley.Music.Playlist.Remove </td>
@@ -233,6 +283,11 @@ EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>Stopped</b></
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Removes a song from the playlist. <br  />
@@ -265,7 +320,7 @@ EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>Stopped</b></
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -276,7 +331,7 @@ EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>Stopped</b></
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/core/Music/<b>Playlist.cs</b></li>
+<li><b>Playlist.cs</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

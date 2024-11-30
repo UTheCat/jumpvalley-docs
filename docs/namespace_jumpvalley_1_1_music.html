@@ -6,6 +6,7 @@
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Jumpvalley: Jumpvalley.Music Namespace Reference</title>
+<link rel="icon" href="app_icon_round_256px.png" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="app_icon_round_64px.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Jumpvalley
+   <div id="projectname">Jumpvalley<span id="projectnumber">&#160;0.5.0</span>
    </div>
+   <div id="projectbrief">An app and library that can be used to test and run 3D platformer levels. Currently being made with Godot.</div>
   </td>
  </tr>
  </tbody>
@@ -86,7 +89,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_music_1_1_music_group.html">MusicGroup</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles a Playlist that's in the form of nodes in a scene tree. <br  />
  Each MusicGroup node must have a node as a direct child named "Music" that lists the directory (folder) paths of songs in its metadata. <br  />
- The metadata has to list each song's folder in this format: <br  />
+<br  />
+ There are two ways to specify songs that should be played: <br  />
+<br  />
+ <b>songs array in metadata</b> <br  />
+ The metadata (as mentioned above) has an array named <code>songs</code> that specifies the songs to play. The array's C# type should be Godot.Collections.Array. <br  />
+<br  />
+ <b>Incremental songN metadata entries</b> <br  />
+ This method is used when no songs array is present in the metadata. Multiple metadata entries should be specified in this format: <br  />
  Entry name: <code>songN</code> where N represents the numerical index of the song package directory starting from 1. Songs are played in numerical order. <br  />
  Entry value: The absolute path to the song's directory. (The value's type must be string.)  <a href="class_jumpvalley_1_1_music_1_1_music_group.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,6 +125,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_music_1_1_song_changed_args.html">SongChangedArgs</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event arguments for Playlist.SongChanged and MusicPlayer.SongChanged  <a href="class_jumpvalley_1_1_music_1_1_song_changed_args.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_music_1_1_song_info.html">SongInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that holds some metadata about a song file.  <a href="class_jumpvalley_1_1_music_1_1_song_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jumpvalley_1_1_music_1_1_song_info_file.html">SongInfoFile</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the associated "info.txt" file for a song. <br  />
