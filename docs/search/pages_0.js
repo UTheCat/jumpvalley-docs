@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['documentation_0',['Jumpvalley Documentation',['../index.html',1,'']]]
+  ['be_20of_20interest_0',['Some links that might be of interest',['../index.html#autotoc_md1',1,'']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hitboxdepth_0',['HitboxDepth',['../class_jumpvalley_1_1_players_1_1_movement_1_1_climber.html#a1b06d414cbb1b21783bab0c0e85941de',1,'Jumpvalley::Players::Movement::Climber']]],
-  ['hitboxwidth_1',['HitboxWidth',['../class_jumpvalley_1_1_players_1_1_movement_1_1_climber.html#a1fe8c08b18496c2d99ceb2caed08af9a',1,'Jumpvalley::Players::Movement::Climber']]]
+  ['hitboxdepth_0',['HitboxDepth',['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1Climber.html#a3b4dd4a3298f891266242e389083c69e',1,'UTheCat::Jumpvalley::Core::Players::Movement::Climber']]],
+  ['hitboxwidth_1',['HitboxWidth',['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1Climber.html#ae7c581fd40c6c7c5de76cf0f0f927f30',1,'UTheCat::Jumpvalley::Core::Players::Movement::Climber']]]
 ];

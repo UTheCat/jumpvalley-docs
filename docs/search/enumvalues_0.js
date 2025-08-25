@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['addandremove_0',['AddAndRemove',['../class_jumpvalley_1_1_music_1_1_playlist.html#a47114cc451be69090edb4f0093c5ceafa703edb99add78b4fe95478e9e1dba03f',1,'Jumpvalley::Music::Playlist']]]
+  ['addandremove_0',['AddAndRemove',['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Music_1_1Playlist.html#a35ed599fb0d5524481eebf887148b277a703edb99add78b4fe95478e9e1dba03f',1,'UTheCat::Jumpvalley::Core::Music::Playlist']]]
 ];

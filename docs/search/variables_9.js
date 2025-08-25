@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jumpvelocity_0',['JumpVelocity',['../class_jumpvalley_1_1_players_1_1_movement_1_1_base_mover.html#a1e05785c177e801547a54ec9243536e0',1,'Jumpvalley::Players::Movement::BaseMover']]]
+  ['jumpvelocity_0',['JumpVelocity',['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html#acb596eb0c25cc8d525e58c2acd640720',1,'UTheCat::Jumpvalley::Core::Players::Movement::BaseMover']]]
 ];

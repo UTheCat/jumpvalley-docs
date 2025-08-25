@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['yaw_0',['Yaw',['../class_jumpvalley_1_1_players_1_1_camera_1_1_base_camera.html#a039d10492bd8de60ecd3c7e5e89df983',1,'Jumpvalley.Players.Camera.BaseCamera.Yaw'],['../class_jumpvalley_1_1_players_1_1_movement_1_1_body_rotator.html#a2f4b16b46be5bc4fcf7e551c194d5462',1,'Jumpvalley.Players.Movement.BodyRotator.Yaw']]]
+  ['yaw_0',['Yaw',['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Camera_1_1BaseCamera.html#a7b0fb7f1e1d23a9ae6f2bab318cacfd5',1,'UTheCat.Jumpvalley.Core.Players.Camera.BaseCamera.Yaw'],['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BodyRotator.html#a1480ec22edcabc01ba83e95d563ed00d',1,'UTheCat.Jumpvalley.Core.Players.Movement.BodyRotator.Yaw']]]
 ];
