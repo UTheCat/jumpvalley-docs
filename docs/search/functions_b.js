@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['offsetstopwatch_0',['OffsetStopwatch',['../class_jumpvalley_1_1_timing_1_1_offset_stopwatch.html#a563ec20146421b629450ed57a667eebb',1,'Jumpvalley::Timing::OffsetStopwatch']]],
-  ['openstream_1',['OpenStream',['../class_jumpvalley_1_1_music_1_1_song.html#a19e0452d71c416e17a6339920d3ef124',1,'Jumpvalley::Music::Song']]]
+  ['offsetstopwatch_0',['OffsetStopwatch',['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Timing_1_1OffsetStopwatch.html#a348dd5971f092a39f14dfe306d37e8d1',1,'UTheCat::Jumpvalley::Core::Timing::OffsetStopwatch']]],
+  ['openstream_1',['OpenStream',['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Music_1_1Song.html#a53f67329eca06fb79999a807dd6efdf3',1,'UTheCat::Jumpvalley::Core::Music::Song']]]
 ];

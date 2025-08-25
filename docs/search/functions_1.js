@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['basemover_0',['BaseMover',['../class_jumpvalley_1_1_players_1_1_movement_1_1_base_mover.html#abe044cfe7980454fd92f7ab8952db3e3',1,'Jumpvalley::Players::Movement::BaseMover']]],
-  ['bodyrotator_1',['BodyRotator',['../class_jumpvalley_1_1_players_1_1_movement_1_1_body_rotator.html#a244fd77f7977281b70919ad59101dfd5',1,'Jumpvalley::Players::Movement::BodyRotator']]],
-  ['bodystatechangedargs_2',['BodyStateChangedArgs',['../class_jumpvalley_1_1_players_1_1_movement_1_1_body_state_changed_args.html#a7f3649b717c8fde293e9bff81ce4be6d',1,'Jumpvalley::Players::Movement::BodyStateChangedArgs']]]
+  ['basemover_0',['BaseMover',['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html#aae86cd71c9e2ed0b1c8c6c549d75ac6f',1,'UTheCat::Jumpvalley::Core::Players::Movement::BaseMover']]],
+  ['bodyrotator_1',['BodyRotator',['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BodyRotator.html#a895e6d28c7d59d43a5017d20b594aa12',1,'UTheCat::Jumpvalley::Core::Players::Movement::BodyRotator']]],
+  ['bodystatechangedargs_2',['BodyStateChangedArgs',['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BodyStateChangedArgs.html#ad2195340fc8c0ac74f734a68fe379097',1,'UTheCat::Jumpvalley::Core::Players::Movement::BodyStateChangedArgs']]]
 ];

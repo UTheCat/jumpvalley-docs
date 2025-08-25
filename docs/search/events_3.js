@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['songchanged_0',['SongChanged',['../class_jumpvalley_1_1_music_1_1_music_player.html#a00976d1da90bfdd4a977154761dcce5e',1,'Jumpvalley.Music.MusicPlayer.SongChanged'],['../class_jumpvalley_1_1_music_1_1_playlist.html#a979530d749c74df9e6208f3822863227',1,'Jumpvalley.Music.Playlist.SongChanged']]],
-  ['stopped_1',['Stopped',['../class_jumpvalley_1_1_music_1_1_playlist.html#a57b85f033969a79c7c4d85c0f6b10d2f',1,'Jumpvalley::Music::Playlist']]]
+  ['songchanged_0',['SongChanged',['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Music_1_1MusicPlayer.html#a755599a9c2012ac5dad7b59149954cbe',1,'UTheCat.Jumpvalley.Core.Music.MusicPlayer.SongChanged'],['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Music_1_1Playlist.html#afdfded74d750df5a7e9aa15a8fd1d5de',1,'UTheCat.Jumpvalley.Core.Music.Playlist.SongChanged']]],
+  ['stopped_1',['Stopped',['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Music_1_1Playlist.html#aca42b3dcc7f7085b5f97ce80fc44e501',1,'UTheCat::Jumpvalley::Core::Music::Playlist']]]
 ];

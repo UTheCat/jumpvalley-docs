@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['leveldifficulty_0',['LevelDifficulty',['../class_jumpvalley_1_1_levels_1_1_level_info.html#a359cd9b210f7f07d7a9ef179ad572dc8',1,'Jumpvalley.Levels.LevelInfo.LevelDifficulty'],['../class_jumpvalley_1_1_levels_1_1_level_info_file.html#a093bd7fee7f01eb4218df8307aa84e04',1,'Jumpvalley.Levels.LevelInfoFile.LevelDifficulty']]],
-  ['lobby_1',['Lobby',['../class_jumpvalley_1_1_levels_1_1_level_runner.html#a9dee8af91e3b8ae50f6024f2cc636785',1,'Jumpvalley::Levels::LevelRunner']]]
+  ['leveldifficulty_0',['LevelDifficulty',['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Levels_1_1LevelInfo.html#a0e157cebd490f4e3558b63d7ee235e23',1,'UTheCat.Jumpvalley.Core.Levels.LevelInfo.LevelDifficulty'],['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Levels_1_1LevelInfoFile.html#a1378f4ffc23f64b1904f5cdde1a7a012',1,'UTheCat.Jumpvalley.Core.Levels.LevelInfoFile.LevelDifficulty']]],
+  ['lobby_1',['Lobby',['../classUTheCat_1_1Jumpvalley_1_1Core_1_1Levels_1_1LevelRunner.html#a5bf1535d78df3c499e14537dabcbd343',1,'UTheCat::Jumpvalley::Core::Levels::LevelRunner']]]
 ];
