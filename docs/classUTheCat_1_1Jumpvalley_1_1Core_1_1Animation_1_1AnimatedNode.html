@@ -96,14 +96,21 @@ Inheritance diagram for UTheCat.Jumpvalley.Core.Animation.AnimatedNode:</div>
  <div class="center">
   <img src="classUTheCat_1_1Jumpvalley_1_1Core_1_1Animation_1_1AnimatedNode.png" usemap="#UTheCat_2EJumpvalley_2ECore_2EAnimation_2EAnimatedNode_map" alt=""/>
   <map id="UTheCat_2EJumpvalley_2ECore_2EAnimation_2EAnimatedNode_map" name="UTheCat_2EJumpvalley_2ECore_2EAnimation_2EAnimatedNode_map">
-<area href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Gui_1_1BackgroundPanel.html" title="Handler for the BackgroundPanel, a panel (or some other Godot Control) that acts as a background for ..." alt="UTheCat.Jumpvalley.Core.Gui.BackgroundPanel" shape="rect" coords="0,56,305,80"/>
+<area href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Gui_1_1BackgroundPanel.html" title="Handler for the BackgroundPanel, a panel (or some other Godot Control) that acts as a background for ..." alt="UTheCat.Jumpvalley.Core.Gui.BackgroundPanel" shape="rect" coords="157,112,462,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a12d244950f19d5cb9ea40011b9d469cb" id="r_a12d244950f19d5cb9ea40011b9d469cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12d244950f19d5cb9ea40011b9d469cb">AnimatedNode</a> (Node actualNode)</td></tr>
-<tr class="memdesc:a12d244950f19d5cb9ea40011b9d469cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of AnimatedControl.  <br /></td></tr>
+<tr class="memdesc:a12d244950f19d5cb9ea40011b9d469cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Animation_1_1AnimatedNode.html" title="This class provides some components to bind to a Godot node, mainly to assist with writing animation ...">AnimatedNode</a>  <br /></td></tr>
+<tr class="memitem:a2caaefa15bfbb63b39698823bd101915" id="r_a2caaefa15bfbb63b39698823bd101915"><td class="memItemLeft" align="right" valign="top"><a id="a2caaefa15bfbb63b39698823bd101915" name="a2caaefa15bfbb63b39698823bd101915"></a>
+new void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> ()</td></tr>
+<tr class="memdesc:a2caaefa15bfbb63b39698823bd101915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disposes of this <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Animation_1_1AnimatedNode.html" title="This class provides some components to bind to a Godot node, mainly to assist with writing animation ...">AnimatedNode</a>. <br  />
+<br  />
+ To assist with garbage collection, this method will automatically call the <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Animation_1_1AnimatedNode.html" title="This class provides some components to bind to a Godot node, mainly to assist with writing animation ...">AnimatedNode</a>'s QueueFree method. <br  />
+<br  />
+ By default, the implementation of this <a class="el" href="#a2caaefa15bfbb63b39698823bd101915" title="Disposes of this AnimatedNode.    To assist with garbage collection, this method will automatically c...">Dispose()</a> method does nothing to <a class="el" href="#a94fb64f26dc2f3236e8ad9c4038728f9" title="The node to be animated.">ActualNode</a> (e.g. the default implementation of this <a class="el" href="#a2caaefa15bfbb63b39698823bd101915" title="Disposes of this AnimatedNode.    To assist with garbage collection, this method will automatically c...">Dispose()</a> method doesn't free <a class="el" href="#a94fb64f26dc2f3236e8ad9c4038728f9" title="The node to be animated.">ActualNode</a> from memory). <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -117,13 +124,19 @@ Node&#160;</td><td class="memItemRight" valign="bottom"><b>ActualNode</b><code> 
 <tr class="memdesc:a94fb64f26dc2f3236e8ad9c4038728f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The node to be animated. <br /></td></tr>
 <tr class="memitem:aeb563c7f7ae1b248d20e4817586f97bc" id="r_aeb563c7f7ae1b248d20e4817586f97bc"><td class="memItemLeft" align="right" valign="top"><a id="aeb563c7f7ae1b248d20e4817586f97bc" name="aeb563c7f7ae1b248d20e4817586f97bc"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVisible</b><code> [get, set]</code></td></tr>
-<tr class="memdesc:aeb563c7f7ae1b248d20e4817586f97bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not <a class="el" href="#a94fb64f26dc2f3236e8ad9c4038728f9" title="The node to be animated.">ActualNode</a> should be visible. Toggling this property will run the animation for showing/hiding <a class="el" href="#a94fb64f26dc2f3236e8ad9c4038728f9" title="The node to be animated.">ActualNode</a>. <br /></td></tr>
+<tr class="memdesc:aeb563c7f7ae1b248d20e4817586f97bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not <a class="el" href="#a94fb64f26dc2f3236e8ad9c4038728f9" title="The node to be animated.">ActualNode</a> should be visible. Classes deriving from <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Animation_1_1AnimatedNode.html" title="This class provides some components to bind to a Godot node, mainly to assist with writing animation ...">AnimatedNode</a> will typically display show/hide animations when this property is toggled. <br  />
+<br  />
+ This property does not indicate whether or not <a class="el" href="#a94fb64f26dc2f3236e8ad9c4038728f9" title="The node to be animated.">ActualNode</a> is actually visible. For example, <a class="el" href="#aeb563c7f7ae1b248d20e4817586f97bc" title="Whether or not ActualNode should be visible. Classes deriving from AnimatedNode will typically displa...">IsVisible</a> could be set to false while <a class="el" href="#a94fb64f26dc2f3236e8ad9c4038728f9" title="The node to be animated.">ActualNode</a> is still visible (but an animation is playing to hide <a class="el" href="#a94fb64f26dc2f3236e8ad9c4038728f9" title="The node to be animated.">ActualNode</a>). <br  />
+<br  />
+ To determine whether or not <a class="el" href="#a94fb64f26dc2f3236e8ad9c4038728f9" title="The node to be animated.">ActualNode</a> is actually visible, use <a class="el" href="#a94fb64f26dc2f3236e8ad9c4038728f9" title="The node to be animated.">ActualNode</a>'s Visible property (or a similar equivalent if <a class="el" href="#a94fb64f26dc2f3236e8ad9c4038728f9" title="The node to be animated.">ActualNode</a> isn't a Node2D, Node3D, or Control). <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-events" class="groupheader"><a id="events" name="events"></a>
 Events</h2></td></tr>
 <tr class="memitem:abd76fa77e3c3585d612eb4b8e77b9081" id="r_abd76fa77e3c3585d612eb4b8e77b9081"><td class="memItemLeft" align="right" valign="top"><a id="abd76fa77e3c3585d612eb4b8e77b9081" name="abd76fa77e3c3585d612eb4b8e77b9081"></a>
 EventHandler&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>VisibilityChanged</b></td></tr>
-<tr class="memdesc:abd76fa77e3c3585d612eb4b8e77b9081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that's raised when <a class="el" href="#aeb563c7f7ae1b248d20e4817586f97bc" title="Whether or not ActualNode should be visible. Toggling this property will run the animation for showin...">IsVisible</a> gets toggled. The boolean argument of this event is the new value of <a class="el" href="#aeb563c7f7ae1b248d20e4817586f97bc" title="Whether or not ActualNode should be visible. Toggling this property will run the animation for showin...">IsVisible</a> <br /></td></tr>
+<tr class="memdesc:abd76fa77e3c3585d612eb4b8e77b9081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that's raised when the <a class="el" href="#aeb563c7f7ae1b248d20e4817586f97bc" title="Whether or not ActualNode should be visible. Classes deriving from AnimatedNode will typically displa...">IsVisible</a> is set or changed. The boolean argument of this event is the new value of <a class="el" href="#aeb563c7f7ae1b248d20e4817586f97bc" title="Whether or not ActualNode should be visible. Classes deriving from AnimatedNode will typically displa...">IsVisible</a>. <br  />
+<br  />
+ This event will fire even if something sets the <a class="el" href="#aeb563c7f7ae1b248d20e4817586f97bc" title="Whether or not ActualNode should be visible. Classes deriving from AnimatedNode will typically displa...">IsVisible</a> property to the same value (meaning the truth value of <a class="el" href="#aeb563c7f7ae1b248d20e4817586f97bc" title="Whether or not ActualNode should be visible. Classes deriving from AnimatedNode will typically displa...">IsVisible</a> didn't change after setting the property.) Store the "old/previous" value of <a class="el" href="#aeb563c7f7ae1b248d20e4817586f97bc" title="Whether or not ActualNode should be visible. Classes deriving from AnimatedNode will typically displa...">IsVisible</a> somewhere to check if the value of <a class="el" href="#aeb563c7f7ae1b248d20e4817586f97bc" title="Whether or not ActualNode should be visible. Classes deriving from AnimatedNode will typically displa...">IsVisible</a> actually changed. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class provides some components to bind to a Godot node, mainly to assist with writing animation code for the node. </p>
@@ -151,7 +164,7 @@ EventHandler&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b
 </table>
 </div><div class="memdoc">
 
-<p>Creates a new instance of AnimatedControl. </p>
+<p>Creates a new instance of <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Animation_1_1AnimatedNode.html" title="This class provides some components to bind to a Godot node, mainly to assist with writing animation ...">AnimatedNode</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">actualNode</td><td>The root node of the Godot control to be animated</td></tr>

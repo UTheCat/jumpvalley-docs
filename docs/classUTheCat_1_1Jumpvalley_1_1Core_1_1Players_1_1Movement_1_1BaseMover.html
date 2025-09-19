@@ -91,8 +91,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This is the base class that provides a player's character the ability to move in different directions, jump, and climb. It serves mainly as a controller interface for developers to build on. <br  />
- The design of this takes lots of inspiration from Roblox's PlayerModule.  
+<p>This is the base class that provides a player's character the ability to move in various directions, jump, and climb. <a class="el" href="namespaceUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement.html">Movement</a> logic, designed for 3D precision platforming, is provided by this class out of the box.  
  <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for UTheCat.Jumpvalley.Core.Players.Movement.BaseMover:</div>
@@ -114,13 +113,13 @@ Public Types</h2></td></tr>
 , <a class="el" href="#ac0656555928f25cf1a4fab8fb0f41e3ca0f57d5b441651c57eac9f91efaa5a75a">Falling</a> = 6
 <br />
  }</td></tr>
-<tr class="memdesc:ac0656555928f25cf1a4fab8fb0f41e3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current movement state of the character associated with the mover.  <a href="#ac0656555928f25cf1a4fab8fb0f41e3c">More...</a><br /></td></tr>
+<tr class="memdesc:ac0656555928f25cf1a4fab8fb0f41e3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerators describing the status of the character's current movement.  <a href="#ac0656555928f25cf1a4fab8fb0f41e3c">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aae86cd71c9e2ed0b1c8c6c549d75ac6f" id="r_aae86cd71c9e2ed0b1c8c6c549d75ac6f"><td class="memItemLeft" align="right" valign="top"><a id="aae86cd71c9e2ed0b1c8c6c549d75ac6f" name="aae86cd71c9e2ed0b1c8c6c549d75ac6f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>BaseMover</b> ()</td></tr>
-<tr class="memdesc:aae86cd71c9e2ed0b1c8c6c549d75ac6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new instance of <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html" title="This is the base class that provides a player&#39;s character the ability to move in different directions...">BaseMover</a> that can be used to handle character movement. <br /></td></tr>
+<tr class="memdesc:aae86cd71c9e2ed0b1c8c6c549d75ac6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new instance of <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html" title="This is the base class that provides a player&#39;s character the ability to move in various directions,...">BaseMover</a> that can be used to handle character movement. <br /></td></tr>
 <tr class="memitem:a55cfdfa4a3a44f1b7819594b0aee138d" id="r_a55cfdfa4a3a44f1b7819594b0aee138d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55cfdfa4a3a44f1b7819594b0aee138d">IsOnFloor</a> ()</td></tr>
 <tr class="memdesc:a55cfdfa4a3a44f1b7819594b0aee138d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not the associated CharacterBody3D is on the floor.  <br /></td></tr>
 <tr class="memitem:a3f8832d42a0110b23a2b5c0c127fdac1" id="r_a3f8832d42a0110b23a2b5c0c127fdac1"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f8832d42a0110b23a2b5c0c127fdac1">GetMoveDirection</a> (float yaw)</td></tr>
@@ -129,14 +128,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aec2f86e841137bc11b7882e3141fea02" id="r_aec2f86e841137bc11b7882e3141fea02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec2f86e841137bc11b7882e3141fea02">IsTryingToMove</a> ()</td></tr>
 <tr class="memdesc:aec2f86e841137bc11b7882e3141fea02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not the character is trying to move. <br  />
 <br  />
- The character is considered to want to move when either <a class="el" href="#a69827c5d6876d903d971dbe679811423" title="Scalar in which the character wishes to go forward in the range of [-1, 1].   A value less than 0 ind...">ForwardValue</a> or <a class="el" href="#aa1fe080990e742c422c2be1a02173a1d" title="Scalar in which the character wishes to go right in the range of [-1, 1].   A value less than 0 indic...">RightValue</a> isn't zero.  <br /></td></tr>
+ The character is considered to want to move when either <a class="el" href="#a69827c5d6876d903d971dbe679811423" title="Scalar in which the character wishes to go forward in the range of [-1, 1].    A value less than 0 in...">ForwardValue</a> or <a class="el" href="#aa1fe080990e742c422c2be1a02173a1d" title="Scalar in which the character wishes to go right in the range of [-1, 1].    A value less than 0 indi...">RightValue</a> isn't zero.  <br /></td></tr>
 <tr class="memitem:aaebebe5df0e5f4c734de6e5017ca7c7c" id="r_aaebebe5df0e5f4c734de6e5017ca7c7c"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaebebe5df0e5f4c734de6e5017ca7c7c">GetMoveVelocity</a> (float delta, float yaw)</td></tr>
 <tr class="memdesc:aaebebe5df0e5f4c734de6e5017ca7c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the velocity that the character wants to move at for the current physics frame.  <br /></td></tr>
 <tr class="memitem:aa5d7f3f355f4810f3d44007302a56697" id="r_aa5d7f3f355f4810f3d44007302a56697"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5d7f3f355f4810f3d44007302a56697">HandlePhysicsStep</a> (double delta)</td></tr>
 <tr class="memdesc:aa5d7f3f355f4810f3d44007302a56697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to associate with the physics process step in the current scene tree.  <br /></td></tr>
 <tr class="memitem:a92dc4ab6b04a67b1b241fef3d689af91" id="r_a92dc4ab6b04a67b1b241fef3d689af91"><td class="memItemLeft" align="right" valign="top"><a id="a92dc4ab6b04a67b1b241fef3d689af91" name="a92dc4ab6b04a67b1b241fef3d689af91"></a>
 new void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> ()</td></tr>
-<tr class="memdesc:a92dc4ab6b04a67b1b241fef3d689af91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disposes of this <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html" title="This is the base class that provides a player&#39;s character the ability to move in different directions...">BaseMover</a> <br /></td></tr>
+<tr class="memdesc:a92dc4ab6b04a67b1b241fef3d689af91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disposes of this <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html" title="This is the base class that provides a player&#39;s character the ability to move in various directions,...">BaseMover</a> <br /></td></tr>
 <tr class="memitem:a141008ccfce953f0fccf0dce51e6f390" id="r_a141008ccfce953f0fccf0dce51e6f390"><td class="memItemLeft" align="right" valign="top"><a id="a141008ccfce953f0fccf0dce51e6f390" name="a141008ccfce953f0fccf0dce51e6f390"></a>
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>_PhysicsProcess</b> (double delta)</td></tr>
 </table><table class="memberdecls">
@@ -145,11 +144,17 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a69827c5d6876d903d971dbe679811423" id="r_a69827c5d6876d903d971dbe679811423"><td class="memItemLeft" align="right" valign="top"><a id="a69827c5d6876d903d971dbe679811423" name="a69827c5d6876d903d971dbe679811423"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>ForwardValue</b> = 0</td></tr>
 <tr class="memdesc:a69827c5d6876d903d971dbe679811423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar in which the character wishes to go forward in the range of [-1, 1]. <br  />
- A value less than 0 indicates that the character wants to go backwards while a value greater than 0 indicates that the character wants to go forwards. <br /></td></tr>
+<br  />
+ A value less than 0 indicates that the character wants to go backwards while a value greater than 0 indicates that the character wants to go forwards. <br  />
+<br  />
+ Specifically, this number indicates the scale at which the player wants to move forward relative to the player's current movement direction. <br /></td></tr>
 <tr class="memitem:aa1fe080990e742c422c2be1a02173a1d" id="r_aa1fe080990e742c422c2be1a02173a1d"><td class="memItemLeft" align="right" valign="top"><a id="aa1fe080990e742c422c2be1a02173a1d" name="aa1fe080990e742c422c2be1a02173a1d"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>RightValue</b> = 0</td></tr>
 <tr class="memdesc:aa1fe080990e742c422c2be1a02173a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar in which the character wishes to go right in the range of [-1, 1]. <br  />
- A value less than 0 indicates that the character wants to go left while a value greater than 0 indicates that the character wants to go right. <br /></td></tr>
+<br  />
+ A value less than 0 indicates that the character wants to go left while a value greater than 0 indicates that the character wants to go right. <br  />
+<br  />
+ Specifically, this number indicates the scale at which the player wants to move right relative to the player's current movement direction. <br /></td></tr>
 <tr class="memitem:a9c69be65e4353aea2811a8886746c526" id="r_a9c69be65e4353aea2811a8886746c526"><td class="memItemLeft" align="right" valign="top"><a id="a9c69be65e4353aea2811a8886746c526" name="a9c69be65e4353aea2811a8886746c526"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>Gravity</b> = 9.8f</td></tr>
 <tr class="memdesc:a9c69be65e4353aea2811a8886746c526"><td class="mdescLeft">&#160;</td><td class="mdescRight">The gravity that the character experiences in meters per second squared. <br /></td></tr>
@@ -203,26 +208,25 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>AutoClimbStepMaxYBoo
 <tr class="memitem:a66fcaa9438294cf6eacf353cb6d94756" id="r_a66fcaa9438294cf6eacf353cb6d94756"><td class="memItemLeft" align="right" valign="top"><a id="a66fcaa9438294cf6eacf353cb6d94756" name="a66fcaa9438294cf6eacf353cb6d94756"></a>
 <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Camera_1_1BaseCamera.html">BaseCamera</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Camera</b> = null</td></tr>
 <tr class="memdesc:a66fcaa9438294cf6eacf353cb6d94756"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Camera_1_1BaseCamera.html" title="The base class that handles a 3d camera focusing on a 3d object. It includes support for camera panni...">BaseCamera</a> to bind <a class="el" href="#af5c9070e48e04c76a209b5cea5fb57a0" title="The current yaw angle of the camera that&#39;s currently associated with the character.">CameraYaw</a> to. <br /></td></tr>
-<tr class="memitem:a4491c55ce07f28e1691bd25f5ab90724" id="r_a4491c55ce07f28e1691bd25f5ab90724"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4491c55ce07f28e1691bd25f5ab90724">Mass</a> = 60f</td></tr>
-<tr class="memdesc:a4491c55ce07f28e1691bd25f5ab90724"><td class="mdescLeft">&#160;</td><td class="mdescRight">The forces to apply when <a class="el" href="#aa5d7f3f355f4810f3d44007302a56697" title="Callback to associate with the physics process step in the current scene tree.">HandlePhysicsStep</a> is called. The order in which the forces in this list are applied is from the end of the list to the beginning of the list. <br  />
-<br  />
- Forces are in newtons. <br  />
-<br  />
- To be implemented.  <br /></td></tr>
+<tr class="memitem:a4491c55ce07f28e1691bd25f5ab90724" id="r_a4491c55ce07f28e1691bd25f5ab90724"><td class="memItemLeft" align="right" valign="top"><a id="a4491c55ce07f28e1691bd25f5ab90724" name="a4491c55ce07f28e1691bd25f5ab90724"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Mass</b> = 60f</td></tr>
+<tr class="memdesc:a4491c55ce07f28e1691bd25f5ab90724"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mass of the character in kilograms. <br /></td></tr>
 <tr class="memitem:a4ef0375e3805253c55fb7b7a068b496d" id="r_a4ef0375e3805253c55fb7b7a068b496d"><td class="memItemLeft" align="right" valign="top"><a id="a4ef0375e3805253c55fb7b7a068b496d" name="a4ef0375e3805253c55fb7b7a068b496d"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>ForceMultiplier</b> = 5f</td></tr>
-<tr class="memdesc:a4ef0375e3805253c55fb7b7a068b496d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The "magnitude" in which the character pushes movable rigid bodies. <br  />
+<tr class="memdesc:a4ef0375e3805253c55fb7b7a068b496d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplier for the force in which the character uses to push movable rigid bodies. <br  />
 <br  />
  This is basically the same as the physical strength one uses to push an object. <br /></td></tr>
 <tr class="memitem:a2eccfcb9e0b8eb04993afc9dc3e401f4" id="r_a2eccfcb9e0b8eb04993afc9dc3e401f4"><td class="memItemLeft" align="right" valign="top"><a id="a2eccfcb9e0b8eb04993afc9dc3e401f4" name="a2eccfcb9e0b8eb04993afc9dc3e401f4"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>CharacterPushForceMultiplier</b> = 5f</td></tr>
-<tr class="memdesc:a2eccfcb9e0b8eb04993afc9dc3e401f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplier for the force applied by a <em>colliding</em> rigid body to the character being handled by this <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html" title="This is the base class that provides a player&#39;s character the ability to move in different directions...">BaseMover</a>. <br /></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>CharacterPushForceMultiplier</b> = 1f</td></tr>
+<tr class="memdesc:a2eccfcb9e0b8eb04993afc9dc3e401f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplier for the force applied by a <em>colliding</em> rigid body to the character being handled by this <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html" title="This is the base class that provides a player&#39;s character the ability to move in various directions,...">BaseMover</a>. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a20a86ee3ce1587a10661148081f7c547" id="r_a20a86ee3ce1587a10661148081f7c547"><td class="memItemLeft" align="right" valign="top"><a id="a20a86ee3ce1587a10661148081f7c547" name="a20a86ee3ce1587a10661148081f7c547"></a>
 static readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>CHARACTER_ROOT_COLLIDER_NAME</b> = &quot;RootCollider&quot;</td></tr>
-<tr class="memdesc:a20a86ee3ce1587a10661148081f7c547"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the CollisionShape3D that should be primarily in charge of handling a character's collision. <br /></td></tr>
+<tr class="memdesc:a20a86ee3ce1587a10661148081f7c547"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the CollisionShape3D that should be primarily in charge of handling a character's collision. <br  />
+<br  />
+ For best results, the shape of the CollisionShape3D object should be a box. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -235,16 +239,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RaiseOnFastTurnToggle
 Properties</h2></td></tr>
 <tr class="memitem:a2c7b262c32a53d96d0ec16c90566e85d" id="r_a2c7b262c32a53d96d0ec16c90566e85d"><td class="memItemLeft" align="right" valign="top"><a id="a2c7b262c32a53d96d0ec16c90566e85d" name="a2c7b262c32a53d96d0ec16c90566e85d"></a>
 <a class="el" href="#ac0656555928f25cf1a4fab8fb0f41e3c">BodyState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentBodyState</b><code> [get, set]</code></td></tr>
-<tr class="memdesc:a2c7b262c32a53d96d0ec16c90566e85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current movement state of the character that's being moved by this <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html" title="This is the base class that provides a player&#39;s character the ability to move in different directions...">BaseMover</a> <br /></td></tr>
+<tr class="memdesc:a2c7b262c32a53d96d0ec16c90566e85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current movement state of the character that's being moved by this <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html" title="This is the base class that provides a player&#39;s character the ability to move in various directions,...">BaseMover</a> <br /></td></tr>
 <tr class="memitem:a89204b8569d5b9e2179ced9e28186dad" id="r_a89204b8569d5b9e2179ced9e28186dad"><td class="memItemLeft" align="right" valign="top"><a id="a89204b8569d5b9e2179ced9e28186dad" name="a89204b8569d5b9e2179ced9e28186dad"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsFastTurnEnabled</b><code> [get, set]</code></td></tr>
 <tr class="memdesc:a89204b8569d5b9e2179ced9e28186dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the value of this property is true, the character's yaw angle will instantly be set to a specified "destination" yaw (for example, the current yaw of a <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Camera_1_1BaseCamera.html" title="The base class that handles a 3d camera focusing on a 3d object. It includes support for camera panni...">BaseCamera</a>). Otherwise, while the character is moving, the character's yaw will gradually approach the destination yaw until the character's yaw and the destination yaw match. <br /></td></tr>
 <tr class="memitem:a932f476f67ae01465c044a810aef8f5a" id="r_a932f476f67ae01465c044a810aef8f5a"><td class="memItemLeft" align="right" valign="top"><a id="a932f476f67ae01465c044a810aef8f5a" name="a932f476f67ae01465c044a810aef8f5a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRunning</b><code> [get, set]</code></td></tr>
-<tr class="memdesc:a932f476f67ae01465c044a810aef8f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html" title="This is the base class that provides a player&#39;s character the ability to move in different directions...">BaseMover</a> is actively updating every physics and process frame. <br /></td></tr>
+<tr class="memdesc:a932f476f67ae01465c044a810aef8f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html" title="This is the base class that provides a player&#39;s character the ability to move in various directions,...">BaseMover</a> is actively updating every physics and process frame. <br /></td></tr>
 <tr class="memitem:a14e834a552b6a05433eee1d6bbff5fb6" id="r_a14e834a552b6a05433eee1d6bbff5fb6"><td class="memItemLeft" align="right" valign="top"><a id="a14e834a552b6a05433eee1d6bbff5fb6" name="a14e834a552b6a05433eee1d6bbff5fb6"></a>
 CharacterBody3D&#160;</td><td class="memItemRight" valign="bottom"><b>Body</b><code> [get, set]</code></td></tr>
-<tr class="memdesc:a14e834a552b6a05433eee1d6bbff5fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CharacterBody3D that this <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html" title="This is the base class that provides a player&#39;s character the ability to move in different directions...">BaseMover</a> is binded to. <br /></td></tr>
+<tr class="memdesc:a14e834a552b6a05433eee1d6bbff5fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CharacterBody3D that this <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html" title="This is the base class that provides a player&#39;s character the ability to move in various directions,...">BaseMover</a> is binded to. <br /></td></tr>
 <tr class="memitem:ac3283dc1557757b60428764a5332d283" id="r_ac3283dc1557757b60428764a5332d283"><td class="memItemLeft" align="right" valign="top"><a id="ac3283dc1557757b60428764a5332d283" name="ac3283dc1557757b60428764a5332d283"></a>
 <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BodyRotator.html">BodyRotator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Rotator</b><code> [get]</code></td></tr>
 <tr class="memdesc:ac3283dc1557757b60428764a5332d283"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BodyRotator.html" title="This class is responsible for turning a 3D body&#39;s yaw angle in the direction that it&#39;s moving....">BodyRotator</a> that will be rotating <a class="el" href="#a14e834a552b6a05433eee1d6bbff5fb6" title="The CharacterBody3D that this BaseMover is binded to.">Body</a> <br /></td></tr>
@@ -253,20 +257,19 @@ CharacterBody3D&#160;</td><td class="memItemRight" valign="bottom"><b>Body</b><c
 <tr class="memdesc:adc311e3a9ad22f4e3f0800e46594fff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1Climber.html" title="Allows a character to climb objects. Specifically, these objects are PhysicsBody3Ds A PhysicsBody3D c...">Climber</a> that's currently in charge of determining whether or not the character can climb at the current physics frame. <br /></td></tr>
 <tr class="memitem:acfbe6f8a5d39541d46a96280026662ac" id="r_acfbe6f8a5d39541d46a96280026662ac"><td class="memItemLeft" align="right" valign="top"><a id="acfbe6f8a5d39541d46a96280026662ac" name="acfbe6f8a5d39541d46a96280026662ac"></a>
 Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>LastVelocity</b><code> [get]</code></td></tr>
-<tr class="memdesc:acfbe6f8a5d39541d46a96280026662ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The most recent character velocity. In <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html" title="This is the base class that provides a player&#39;s character the ability to move in different directions...">BaseMover</a>'s PhysicsProcess updater, this is read by <a class="el" href="#aaebebe5df0e5f4c734de6e5017ca7c7c" title="Gets the velocity that the character wants to move at for the current physics frame.">GetMoveVelocity</a> to determine what the velocity in the previous physics frame was before this value gets updated again. <br /></td></tr>
+<tr class="memdesc:acfbe6f8a5d39541d46a96280026662ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The most recent character velocity. In <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html" title="This is the base class that provides a player&#39;s character the ability to move in various directions,...">BaseMover</a>'s PhysicsProcess updater, this is read by <a class="el" href="#aaebebe5df0e5f4c734de6e5017ca7c7c" title="Gets the velocity that the character wants to move at for the current physics frame.">GetMoveVelocity</a> to determine what the velocity in the previous physics frame was before this value gets updated again. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-events" class="groupheader"><a id="events" name="events"></a>
 Events</h2></td></tr>
 <tr class="memitem:a717f2fd7dd17a3b2f55d2ec475768958" id="r_a717f2fd7dd17a3b2f55d2ec475768958"><td class="memItemLeft" align="right" valign="top"><a id="a717f2fd7dd17a3b2f55d2ec475768958" name="a717f2fd7dd17a3b2f55d2ec475768958"></a>
 EventHandler&lt; <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BodyStateChangedArgs.html">BodyStateChangedArgs</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>BodyStateChanged</b></td></tr>
-<tr class="memdesc:a717f2fd7dd17a3b2f55d2ec475768958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that's raised when the character being moved by this <a class="el" href="classUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement_1_1BaseMover.html" title="This is the base class that provides a player&#39;s character the ability to move in different directions...">BaseMover</a> changes. <br /></td></tr>
+<tr class="memdesc:a717f2fd7dd17a3b2f55d2ec475768958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that's raised when the character's current movement state changes. <br /></td></tr>
 <tr class="memitem:ac535bb6924261b075573d53f51fd8850" id="r_ac535bb6924261b075573d53f51fd8850"><td class="memItemLeft" align="right" valign="top"><a id="ac535bb6924261b075573d53f51fd8850" name="ac535bb6924261b075573d53f51fd8850"></a>
 EventHandler&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnFastTurnToggled</b></td></tr>
 <tr class="memdesc:ac535bb6924261b075573d53f51fd8850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that's raised when the value of <a class="el" href="#a89204b8569d5b9e2179ced9e28186dad" title="If the value of this property is true, the character&#39;s yaw angle will instantly be set to a specified...">IsFastTurnEnabled</a> changes. The boolean event argument is the new value of <a class="el" href="#a89204b8569d5b9e2179ced9e28186dad" title="If the value of this property is true, the character&#39;s yaw angle will instantly be set to a specified...">IsFastTurnEnabled</a>. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is the base class that provides a player's character the ability to move in different directions, jump, and climb. It serves mainly as a controller interface for developers to build on. <br  />
- The design of this takes lots of inspiration from Roblox's PlayerModule. </p>
+<div class="textblock"><p>This is the base class that provides a player's character the ability to move in various directions, jump, and climb. <a class="el" href="namespaceUTheCat_1_1Jumpvalley_1_1Core_1_1Players_1_1Movement.html">Movement</a> logic, designed for 3D precision platforming, is provided by this class out of the box. </p>
 </div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
 <a id="ac0656555928f25cf1a4fab8fb0f41e3c" name="ac0656555928f25cf1a4fab8fb0f41e3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0656555928f25cf1a4fab8fb0f41e3c">&#9670;&#160;</a></span>BodyState</h2>
@@ -280,7 +283,7 @@ EventHandler&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b
       </table>
 </div><div class="memdoc">
 
-<p>The current movement state of the character associated with the mover. </p>
+<p>Enumerators describing the status of the character's current movement. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac0656555928f25cf1a4fab8fb0f41e3cac23e2b09ebe6bf4cb5e2a9abe85c0be2" name="ac0656555928f25cf1a4fab8fb0f41e3cac23e2b09ebe6bf4cb5e2a9abe85c0be2"></a>Stopped&#160;</td><td class="fielddoc"><p>The character is not moving. </p>
 </td></tr>
@@ -461,30 +464,8 @@ EventHandler&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b
 
 <p>Returns whether or not the character is trying to move. <br  />
 <br  />
- The character is considered to want to move when either <a class="el" href="#a69827c5d6876d903d971dbe679811423" title="Scalar in which the character wishes to go forward in the range of [-1, 1].   A value less than 0 ind...">ForwardValue</a> or <a class="el" href="#aa1fe080990e742c422c2be1a02173a1d" title="Scalar in which the character wishes to go right in the range of [-1, 1].   A value less than 0 indic...">RightValue</a> isn't zero. </p>
+ The character is considered to want to move when either <a class="el" href="#a69827c5d6876d903d971dbe679811423" title="Scalar in which the character wishes to go forward in the range of [-1, 1].    A value less than 0 in...">ForwardValue</a> or <a class="el" href="#aa1fe080990e742c422c2be1a02173a1d" title="Scalar in which the character wishes to go right in the range of [-1, 1].    A value less than 0 indi...">RightValue</a> isn't zero. </p>
 <dl class="section return"><dt>Returns</dt><dd>Whether or not the character is trying to move. </dd></dl>
-
-</div>
-</div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a4491c55ce07f28e1691bd25f5ab90724" name="a4491c55ce07f28e1691bd25f5ab90724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4491c55ce07f28e1691bd25f5ab90724">&#9670;&#160;</a></span>Mass</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float UTheCat.Jumpvalley.Core.Players.Movement.BaseMover.Mass = 60f</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The forces to apply when <a class="el" href="#aa5d7f3f355f4810f3d44007302a56697" title="Callback to associate with the physics process step in the current scene tree.">HandlePhysicsStep</a> is called. The order in which the forces in this list are applied is from the end of the list to the beginning of the list. <br  />
-<br  />
- Forces are in newtons. <br  />
-<br  />
- To be implemented. </p>
-<p>The mass of the character in kilograms. </p>
 
 </div>
 </div>
