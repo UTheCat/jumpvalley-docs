@@ -1,11 +1,14 @@
 # Jumpvalley Documentation
 
-Welcome to Jumpvalley's documentation! This site contains documentation of Jumpvalley's core API.
+Welcome to Jumpvalley!
 
-This site was built using [Doxygen](https://www.doxygen.nl/).
+Jumpvalley is an app and a library that can be used to test and run 3D platformer levels.
+
+This site contains the documentation for Jumpvalley's core API.
 
 ## Some links that might be of interest
 
+- [Jumpvalley on itch.io](https://uthecat.itch.io/jumpvalley)
 - [Jumpvalley's Git repository on GitHub](https://github.com/UTheCat/jumpvalley)
-- [Jumpvalley Wiki on GitHub](https://github.com/UTheCat/jumpvalley/wiki) (currently has information not found on this website)
-- [Godot documentation](https://docs.godotengine.org/en/stable/)
+- [Jumpvalley Wiki on GitHub](https://github.com/UTheCat/jumpvalley/wiki)
+- [Godot homepage](https://godotengine.org)
